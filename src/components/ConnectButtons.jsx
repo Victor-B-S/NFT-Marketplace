@@ -1,7 +1,6 @@
 
 import classes from './ConnectButtons.module.css'
 
-
 function ConnectButtons(){
     return(
         <div className={classes.flexButtons}>
