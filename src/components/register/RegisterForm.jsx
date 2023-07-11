@@ -5,22 +5,22 @@ function RegisterForm() {
   return (
     <form className={classes.formRegister}>
       <div className={classes.formGroup}>
-        <input type="text" name="" id="" className={classes.registerUser} />
+        <input type="text" 
+        placeholder="Username" 
+        className={classes.registerUser} />
       </div>
 
       <div className={classes.formGroup}>
         <input 
         type="email" 
-        name="" 
-        id="" 
+        placeholder="Email Address" 
         className={classes.registerEmail} />
       </div>
 
       <div className={classes.formGroup}>
         <input
           type="password"
-          name=""
-          id=""
+          placeholder="Password"
           className={classes.registerPassword}
         />
       </div>
@@ -28,8 +28,7 @@ function RegisterForm() {
       <div className={classes.formGroup}>
         <input
           type="password"
-          name=""
-          id=""
+          placeholder="Confirm Password"
           className={classes.registerPassword}
         />
       </div>

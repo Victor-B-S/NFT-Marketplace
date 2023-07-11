@@ -4,7 +4,6 @@
   gap: 60px;
   color: var(--text);
   font-family: var(--font-family-work_sans);
-  height: 700px;
 }
 
 .registerBg {
@@ -19,7 +18,7 @@
 }
 
 .registerForm {
-  margin-top: 4rem;
+  margin-top: 10vmax;
 }
 
 .registerForm h2 {
@@ -33,20 +32,39 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  letter-spacing: 2px;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 500px) {
+  .registerForm p {
+    width: 80%;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 830px) {
   .registerGrid {
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
     gap: 10px;
-    
   }
-  
- 
-}
 
+  .registerForm {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .registerBg img {
+    width: 100vw;
+    height: 260px;
+    object-fit: cover;
+  }
+}
 
 @media (min-width: 820px) {
   .registerBg img {
@@ -63,5 +81,11 @@
 @media (min-width: 1500px) {
   .registerBg img {
     transform: scale(1.5);
+  }
+}
+
+@media (min-width: 2000px) {
+  .registerBg img {
+    transform: scale(1);
   }
 }

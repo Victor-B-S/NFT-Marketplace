@@ -6,14 +6,10 @@ import classes from "./Register.module.css";
 
 function Register() {
   
-  
-  
     return (
     <div className={classes.registerGrid}>
       <div className={classes.registerBg}>
-      <img 
-        src={bgRegister}
-        />
+      <img src={bgRegister}/>
       </div>
       <div className={classes.registerForm}>
         <h2>Create Account</h2>
