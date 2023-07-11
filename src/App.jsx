@@ -1,10 +1,12 @@
 import './App.css'
+import Register from './components/register/Register'
 
 function App() {
 
   return (
     <div className="app">
-      Página inicial
+      <Register />
+      
     </div>
   )
 }
