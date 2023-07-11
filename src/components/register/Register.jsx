@@ -1,6 +1,6 @@
 import RegisterForm from "./RegisterForm";
 
-import bgRegister from "./images/Image Placeholder.svg";
+import bgRegister from "../../images/Register/Image Placeholder.svg";
 
 import classes from "./Register.module.css";
 

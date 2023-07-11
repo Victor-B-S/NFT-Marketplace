@@ -32,15 +32,15 @@
 }
 
 .registerUser {
-  background-image: url(images/User.svg);
+  background-image: url(../../images/Register/User.svg);
 }
 
 .registerEmail {
-  background-image: url(images/EnvelopeSimple.svg);
+  background-image: url(../../images/Register/EnvelopeSimple.svg);
 }
 
 .registerPassword {
-  background-image: url(images/LockKey.svg);
+  background-image: url(../../images/Register/LockKey.svg);
 }
 
 .registerButton button {
