@@ -1,0 +1,45 @@
+.registerBg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .registerBg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+@media (max-width: 830px) {
+
+    .registerBg img {
+        width: 100vw;
+        height: 260px;
+        object-fit: cover;
+      }
+
+}
+
+@media (min-width: 820px) {
+    .registerBg img {
+      transform: scale(1.8);
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .registerBg img {
+      transform: scale(1.35);
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .registerBg img {
+      transform: scale(1.5);
+    }
+  }
+  
+  @media (min-width: 2000px) {
+    .registerBg img {
+      transform: scale(1);
+    }
+  }

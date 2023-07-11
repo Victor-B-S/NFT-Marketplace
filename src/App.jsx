@@ -1,11 +1,13 @@
+
 import './App.css'
-import Register from './components/register/Register'
+import ConnectWallet from './components/ConnectWallet'
+
 
 function App() {
 
   return (
     <div className="app">
-      <Register />
+      <ConnectWallet />
       
     </div>
   )
