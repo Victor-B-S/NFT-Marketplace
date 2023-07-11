@@ -1,10 +1,13 @@
 import './App.css'
+import Card from './components/UI/Card'
 
 function App() {
 
   return (
     <div className="app">
-      Página inicial
+      <Card />
+      <Card />
+      <Card />
     </div>
   )
 }

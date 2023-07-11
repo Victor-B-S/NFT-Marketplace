@@ -1,0 +1,62 @@
+.card{
+    display: inline-block;
+    border-radius: 20px;
+    background: #3B3B3B;
+    margin: 2rem;
+    font-family: Space Mono;
+}
+
+.cardInfo{
+    padding: 0 1.875rem;
+    color: var(--white, #FFF);
+    
+}
+
+.card h4{
+    font-family: Work Sans;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 1rem 0;
+    letter-spacing: 1px;
+    
+}
+
+.cardAvatar{
+    width: 24px;
+    padding-right: 0.8rem;
+}
+
+.cardCreator{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.cardCreator p{
+    margin: 0;
+}
+
+.cardAuctionPrice{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 0.563rem 0;
+    align-items: baseline;
+    
+}
+
+.cardAuctionPrice span{
+    font-size: 12px;
+    color: #858584;
+    
+}
+
+.cardAuctionPrice p{
+    font-size: 16px;
+    margin-top: 0.3rem;
+}
+
+.cardHighestBid{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
