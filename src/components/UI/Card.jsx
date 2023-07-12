@@ -1,6 +1,6 @@
-import cardImg from "../../img/NFTS/ImagePlaceholder.png";
+import cardImg from "../../images/NFTS/ImagePlaceholder.png";
 import classes from "./Card.module.css";
-import avatarImg from "../../img/Avatares/AvatarPlaceholder.png";
+import avatarImg from "../../images/Avatares/AvatarPlaceholder.png";
 
 function Card() {
   return (

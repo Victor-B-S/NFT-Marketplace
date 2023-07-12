@@ -1,13 +1,12 @@
 import './App.css'
-import Card from './components/UI/Card'
+import Marketplace from './components/Marketplace'
+
 
 function App() {
 
   return (
     <div className="app">
-      <Card />
-      <Card />
-      <Card />
+      <Marketplace />
     </div>
   )
 }
