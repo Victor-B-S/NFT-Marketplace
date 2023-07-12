@@ -5,7 +5,9 @@ function Navbar() {
     <nav className={nav.navbar}>
         <div className={nav.logo_container}>	
             <div className={nav.logo_icon}></div>
-            <div className={nav.logo_font}></div>
+            <div className={nav.logo_font}>
+              NFT Marketplace
+            </div>
         </div>
         <div className={nav.menu}>
             <div className={nav.menu_item}>
@@ -19,9 +21,10 @@ function Navbar() {
             </div>
             <button className={nav.btn_login}>
               <img src="../src/images/nav_login.svg"></img>
-              <a href="#">Login</a>
+              <a href="#">Sign Up</a>
             </button>
         </div>
+        <div className={nav.burguer}></div>
     </nav>
   );
 }
