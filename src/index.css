@@ -1,0 +1,21 @@
+:root{
+    --background: #2b2b2b;
+    --background---secondary: #3b3b3b;
+    --black: #000000;
+    --call-to-action: #a259ff;
+    --caption--label-text: #858584;
+    --celeste: #cccccc;
+    --jade: #00ac4f;
+    --masala: #3b3b3b80;
+    --text: #ffffff;
+    --white: #ffffff;
+    --font-size-l: 22px;
+    --font-size-m: 16px;
+    --font-size-s: 12px;
+    --font-size-xl: 28px;
+    --font-size-xxl: 38px;
+    --font-size-xxxl: 51px;
+    --font-size-xxxxl: 67px;
+    --font-family-space_mono: "Space Mono", Helvetica;
+    --font-family-work_sans: "Work Sans", Helvetica;
+}

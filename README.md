@@ -1,5 +1,5 @@
 # NFT Marketplace
-## Created for the second coding challenge of the UOL Compass Internship
+Created for the second coding challenge of the UOL Compass Internship
 
 ### Group 3: Victor, Emanuelle, Gabriel, Leonardo, Oesley
 
