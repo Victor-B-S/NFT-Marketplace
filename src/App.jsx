@@ -1,10 +1,12 @@
-import './App.css'
+import React from 'react'
+import './index.css'
+import Navbar from './components/Navbar/navbar'
 
 function App() {
 
   return (
     <div className="app">
-      Página inicial
+      <Navbar />
     </div>
   )
 }
