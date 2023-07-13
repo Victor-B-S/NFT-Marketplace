@@ -1,0 +1,10 @@
+.app {
+    background: var(--background, #2B2B2B);   
+}
+
+.cardHiw {
+    background: #3B3B3B;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 1rem;
+}
