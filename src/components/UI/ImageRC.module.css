@@ -4,7 +4,7 @@
   }
   
   .registerBg img {
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     width: 100%;
   }
@@ -27,28 +27,3 @@
     
   }
 }
-/*
-@media (min-width: 769px) {
-    .registerBg img {
-      transform: scale(1.9);
-    }
-  }
-  
-  @media (min-width: 1000px) {
-    .registerBg img {
-      transform: scale(1.5);
-    }
-  }
-  
-  @media (min-width: 1300px) {
-    .registerBg img {
-      transform: scale(1.3);
-    }
-  }
-  
-
-  @media (min-width: 2000px) {
-    .registerBg img {
-      transform: scale(1.2);
-    }
-  }*/
