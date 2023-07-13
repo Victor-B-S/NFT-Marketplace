@@ -1,13 +1,14 @@
 .registerGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 40px;
+  height: 70vh;
   color: var(--text);
   font-family: var(--font-family-work_sans);
 }
 
 .registerForm {
-  margin-top: 10vmax;
+  margin-top: 7vmax;
 }
 
 .registerForm h2 {
@@ -24,14 +25,18 @@
   letter-spacing: 2px;
 }
 
-@media (max-width: 500px) {
+
+
+
+@media (max-width: 480px) {
   .registerForm p {
     width: 80%;
     letter-spacing: 0px;
+    text-align: center;
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 768px) {
   .registerGrid {
     display: flex;
     flex-direction: column;

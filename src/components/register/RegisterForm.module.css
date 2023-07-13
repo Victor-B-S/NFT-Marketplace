@@ -63,14 +63,18 @@
   
 }
 
+@media (max-width: 768px) {
+  .formRegister{
+    width: auto;
+  }
 
+}
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .formRegister{
     width: 80%;
-    
-    
   }
+
   .formGroup{
     width: 100%;
     min-width: 200px;
