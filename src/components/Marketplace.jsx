@@ -11,9 +11,11 @@ function Marketplace() {
   useEffect(() => {
     const handleResize = () => {
       
-      if(window.innerWidth < 480){
+      
+
+      if(window.innerWidth <= 480){
         setNumCards(3);
-      }else if((window.innerWidth < 768) && (window.innerWidth > 480)){
+      }else if((window.innerWidth <= 768) && (window.innerWidth > 480)){
         setNumCards(6);
       }else{
         setNumCards(9);
@@ -21,7 +23,7 @@ function Marketplace() {
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Definir o número inicial de cards com base no tamanho atual da tela
+    handleResize(); 
 
     return () => {
       window.removeEventListener('resize', handleResize);
