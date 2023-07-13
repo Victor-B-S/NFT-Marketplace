@@ -1,7 +1,7 @@
-import CardCateg from "./UI/CardCateg";
-import { useEffect, useState } from "react";
-import { imagePaths } from "./UI/imagePaths";
 import classes from "./BrowseCateg.module.css";
+import { imagePaths } from "./UI/imagePaths";
+import { useEffect, useState } from "react";
+import CardCateg from "./UI/CardCateg";
 
 function Browse() {
     const [numCards, setNumCards] = useState(8);
@@ -23,25 +23,27 @@ function Browse() {
         window.removeEventListener('resize', handleResize);
       };
     }, []);
+
+    const titles = ["Art", "Collectibles", "Music", "Photography", "Sport", "Utility", "Video", "Virtual Worlds"];
   
     return (
     <>
-        <div className={classes.bcategContainer}>
-            <div className={classes.bcategTitle}>
-                <h3>Browse Categories</h3>
-            </div>
-            <div className={classes.bcategFlex}>
-            <div className={classes.gridCard}>
-                {imagePaths
-                    .slice(0, numCards)
-                    .map((path, index) => (
-                    <CardCateg key={index} cardImg={path} />
-                ))}
-            </div>
+      <div className={classes.bcategContainer}>
+        <div className={classes.bcategTitle}>
+          <h3>Browse Categories</h3>
+        </div>
+        <div className={classes.bcategFlex}>
+          <div className={classes.gridCard}>
+            {imagePaths
+              .slice(0, numCards)
+              .map((path, index) => (
+              <CardCateg key={index} categImages={path} title={titles[index % titles.length]} />
+            ))}        
           </div>
         </div>
-      </>
-    );
-  }
+      </div>
+    </>
+  );
+}
   
-  export default Browse;
+export default Browse;

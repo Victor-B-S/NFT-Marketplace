@@ -14,14 +14,14 @@
     font-style: normal;
     font-weight: 600;
     margin: 0;
-    padding-left: 75px;
+    padding-left: 90px;
 }
   
 .gridCard {
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 100px;
+    margin: 120px;
     margin-top: 40px;
 }
 
