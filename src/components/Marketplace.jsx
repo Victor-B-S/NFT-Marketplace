@@ -1,8 +1,33 @@
 import Card from "./UI/Card";
 
 import classes from "./Marketplace.module.css";
+import { imagePaths } from "./UI/imagePaths";
+import { useEffect, useState } from "react";
 
 function Marketplace() {
+  
+  const [numCards, setNumCards] = useState(9);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      
+      if(window.innerWidth < 480){
+        setNumCards(3);
+      }else if((window.innerWidth < 768) && (window.innerWidth > 480)){
+        setNumCards(6);
+      }else{
+        setNumCards(9);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Definir o número inicial de cards com base no tamanho atual da tela
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className={classes.marketContainer}>
@@ -32,11 +57,11 @@ function Marketplace() {
       <div className={classes.marketContainer}>
         <div className={classes.marketFlex}>
           <div className={classes.gridCard}>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {imagePaths
+              .slice(0, numCards)
+              .map((path, index) => (
+                <Card key={index} cardImg={path} />
+              ))}
           </div>
         </div>
       </div>

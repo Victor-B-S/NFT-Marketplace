@@ -1,12 +1,17 @@
-import cardImg from "../../images/NFTS/ImagePlaceholder.png";
+/* eslint-disable react/prop-types */
+
+
 import classes from "./Card.module.css";
 import avatarImg from "../../images/Avatares/AvatarPlaceholder.png";
 
-function Card() {
+function Card(props) {
   return (
     <>
       <div className={classes.card}>
-        <img src={cardImg} alt="" />
+        <div className={classes.cardImage}>
+          <img src={props.cardImg} alt="" />
+        </div>
+        
 
         <div className={classes.cardInfo}>
             <h4>Distant Galaxy</h4>

@@ -11,13 +11,17 @@
 
 .marketContainer:nth-child(3) {
   background: var(--background-secondary, #3b3b3b);
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
+  display: flex;
+  justify-content: center;
   justify-items: center;
 }
 
 .marketFlex {
   grid-column: 2;
+}
+
+.marketFlex:nth-child(3){
+  display: grid;
 }
 
 .marketSearch {
@@ -111,19 +115,20 @@
 .gridCard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 25px;
   grid-auto-flow: row;
   margin-top: 10%;
   justify-items: center;
+  margin: 10% 20px 0 20px;
 }
 
-@media (max-width: 1175px) {
+@media (max-width: 768px) {
   .gridCard {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 480px) {
   .marketSearch h3 {
     font-size: 1.75rem;
     margin-top: 15%;
