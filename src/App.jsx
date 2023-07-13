@@ -6,9 +6,9 @@ import CardHiw from './components/UI/CardHiw';
 function App() {
   return (
     <div className="app">
-{/*       <CardCateg />
-      <BrowseCateg /> */}
-      <CardHiw />
+{/*       <CardCateg /> */}
+      <BrowseCateg /> 
+      {/* <CardHiw /> */}
     </div>
   )
 }

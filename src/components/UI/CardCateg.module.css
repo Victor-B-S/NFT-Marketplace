@@ -13,3 +13,7 @@
     color: var(--white, #FFF);
     padding-left: 10%; 
 }
+
+.cardCateg:hover {
+    scale: 0.95;
+}
