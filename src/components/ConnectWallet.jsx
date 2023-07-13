@@ -13,8 +13,8 @@ function ConnectWallet() {
       <div className={classes.connectForm}>
         <h2>Create Account</h2>
         <p>
-          Welcome! enter your details and start
-          <br /> creating, collecting and selling NFTs.
+        Choose a wallet you want to connect. <br/>
+        There are several wallet providers.
         </p>
         <ConnectButtons />
       </div>

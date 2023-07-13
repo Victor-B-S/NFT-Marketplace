@@ -1,25 +1,33 @@
 .flexButtons {
   display: flex;
   flex-direction: column;
-  width: 360px;
-  gap: 20px;
+  width: 80%;
+  gap: 30px;
+  max-width: 500px;
 }
 
 .flexButtons span {
   width: 40px;
   height: 40px;
   padding-right: 20px;
-  margin: 0 20px 0 30px;
+  margin-left: 10px;
   background-repeat: no-repeat;
   background-color: var(--background-secondary, #3b3b3b);
 }
+
+.flexButtons p{
+  padding: 0;
+  margin: 0;
+  text-align: initial;
+}
+
 
 .flexButtons .button {
   display: flex;
   align-items: center;
   border-radius: 20px;
   justify-content: flex-start;
-  height: 80px;
+  height: 70px;
   background: var(--background-secondary, #3b3b3b);
   border: 1px solid var(--call-to-action, #a259ff);
   transition: transform 0.3s ease;
@@ -48,29 +56,39 @@
   background-image: url("../images/Connect/Coinbase.png");
 }
 
-@media (max-width: 835px) {
-  .flexButtons {
-    width: 60%;
-  }
-
-  .flexButtons .button {
-    height: 60px;
-  }
-
+@media (max-width: 768px) {
+ 
   .flexButtons span {
     background-size: 32px 32px;
     background-position: center;
+    margin: 0;
+  }
+  .flexButtons .button {
+    height: 60px;
+  }
+  
+  .flexButtons p {
+    font-size: 20px;
   }
 }
 
-@media (max-width: 543px) {
-    .flexButtons {
-      width: 70%;
-    }
+@media (max-width: 480px) {
+  .flexButtons {
+    width: 90%;
+    gap: 20px;
+  }
+  .flexButtons .button {
+    height: 65px;
+  }
+
+  .flexButtons span {
+    margin: 0;
+  }
+
+  .flexButtons p {
+    font-size: 20px;
+  }
+  
 }
 
-@media (max-width: 428px) {
-    .flexButtons {
-      width: 90%;
-    }
-}
+
