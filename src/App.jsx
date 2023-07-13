@@ -1,12 +1,12 @@
-import './App.css'
+import './App.css';
+import CardCateg from './components/UI/CardCateg';
 
 function App() {
-
   return (
     <div className="app">
-      Página inicial
+      <CardCateg />
     </div>
   )
 }
 
-export default App
+export default App;

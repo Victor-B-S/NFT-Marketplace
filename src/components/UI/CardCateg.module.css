@@ -1,0 +1,15 @@
+.app {
+    background: var(--background, #2B2B2B);   
+}
+
+.cardCateg {
+    display: inline-block;
+    border-radius: 20px;
+    background: #3B3B3B;
+    margin: 2rem;
+}
+
+.cardCateg h4 {
+    padding-left: 10%; 
+    color: var(--white, #FFF);
+}
