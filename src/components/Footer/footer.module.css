@@ -1,0 +1,161 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-secondary);
+    padding: 2.5rem 12.1875rem;
+    gap: 3.0625rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    background-color: var(--background-secondary);
+}
+
+footer .left {
+    display: flex;
+    background-color: var(--background-secondary);
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 15.46313rem;
+}
+
+footer .footer_intro {
+    margin: 1.88rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+}
+
+footer .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+footer .logo_font {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+footer .footer_explorep {
+    margin: 1.56rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+footer .community {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.625rem;
+    margin: 0.94rem 0 0 0;
+}
+
+footer .middlep {
+    margin: 1.88rem 0 1.25rem 0;
+}
+
+footer .community_item {
+    cursor: pointer;
+}
+
+footer .middle {
+    display: flex;
+    background-color: var(--background-secondary);
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 15rem;
+}
+
+footer .right {
+    display: flex;
+    background-color: var(--background-secondary);
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 26.25rem;
+}
+
+footer .footer_input {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+    margin: 0.94rem 0 0 0;
+}
+
+footer .bottom {
+    border-top: 1px solid var(--caption-and-label);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1.25rem;
+    align-self: stretch;
+}
+
+.footer .bottom p {
+    color: #CCC;
+    font-family: Work Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%
+}
+
+footer .input_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer input {
+    outline: none;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    border-radius: 1.25rem;
+    border: none;
+}
+
+footer .footer_input_btn {
+    display: flex;
+    cursor: pointer;
+    height: 3.75rem;
+    padding: 0rem 3.125rem;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 1.01rem;
+    background: var(--call-to-action);
+}
+
+footer .footer_input_btn:hover {
+    scale: 0.95;
+}
+
+footer .footer_input_btn_font {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+}
+
+footer .footer_input_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: white;
+    border-radius: 1.25rem;
+}
+ 
+footer .footer_input_header {
+    max-width: 20.65rem;
+    margin: 1.56rem 0 1.25rem 0;
+}
