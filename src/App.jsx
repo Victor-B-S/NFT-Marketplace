@@ -1,7 +1,6 @@
-import './App.css'
 import './index.css'
 import CardCateg from './components/UI/CardCateg';
-import BrowseCateg from './components/BrowseCateg';
+import BrowseCateg from './components/BrowseCategories/BrowseCateg';
 import Navbar from './components/Navbar/navbar'
 import Footer from './components/Footer/footer'
 

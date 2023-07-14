@@ -7,7 +7,7 @@ function CardCateg(props) {
         <div className={classes.cardImages}>
           <img src={props.categImages} alt="" />
         </div>
-        <h4>{props.title}</h4>
+        <h5>{props.title}</h5>
       </div>
     </>
   );

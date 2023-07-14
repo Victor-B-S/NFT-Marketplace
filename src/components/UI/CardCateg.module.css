@@ -1,5 +1,5 @@
 .app {
-    background: var(--background, #2B2B2B);   
+    background: var(--background);   
 }
 
 .cardCateg {
@@ -9,7 +9,11 @@
     margin: 1rem;
 }
 
-.cardCateg h4 {
-    color: var(--white, #FFF);
+.cardCateg:hover {
+    scale: 0.95;
+}
+
+.cardCateg h5 {
+    color: var(--white);
     padding-left: 10%; 
 }
