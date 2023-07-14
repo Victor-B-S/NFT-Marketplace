@@ -90,7 +90,7 @@ nav .burguer {
 }
 
 /* Tablet */
-@media (min-width:381px) and (max-width:768px) {
+@media (min-width:481px) and (max-width:768px) {
     nav {
         padding: 0.9375rem 3.125rem;
         gap: 0.625rem;

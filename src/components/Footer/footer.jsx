@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import footer from './footer.module.css';
 
 function Footer() {
@@ -34,12 +35,15 @@ function Footer() {
                         <div className={footer.footer_input_header}>
                             <p>Get exclusive promotions & updates straight to your inbox.</p>
                         </div>
+
                         <div className={footer.footer_input_container}>
-                            <input type="email" className='base' placeholder="Enter your email here" />
+                            <input type="email" className='base input_form_footer' placeholder="Enter your email here" />
                             <div className={footer.footer_input_btn}>
+                                <img src="../src/images/EnvelopeSimple.svg" />
                                 <div className={footer.footer_input_btn_font}>Subscribe</div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
