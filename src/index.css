@@ -34,14 +34,6 @@ body {
     background-color: var(--background);
 }
 
-:root {
-    --call-to-action: #A259FF;
-    --background: #2B2B2B;
-    --background-secondary: #3B3B3B;
-    --caption-and-label: #858584;
-    --white: #FFFFFF;
-}
-
 h1 {
     font-family: Space Mono;
     color: white;
@@ -122,4 +114,5 @@ p {
     background-image: url(../src/images/storefront.svg);
     width: 2rem;
     height: 2rem;
+
 }
