@@ -1,0 +1,11 @@
+*{
+    color: white;
+}
+
+.timer{
+    margin: auto;
+    background-color: lightgray;
+    width: 15%;
+
+    text-align: center;
+}
