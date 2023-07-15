@@ -1,6 +1,7 @@
 import Cards from "./Cards";
 import CoverProfile from "./CoverProfile";
 import ArtistInfo from "./ArtistInfo";
+import TabBar from "./TabBar";
 import classes from "./ArtistPage.module.css";
 
 function ArtistPage() {
@@ -8,6 +9,7 @@ function ArtistPage() {
     <>
       <CoverProfile />
       <ArtistInfo />
+      <TabBar />
       <div className={classes.container}>
         <Cards />
       </div>
