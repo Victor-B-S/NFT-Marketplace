@@ -28,9 +28,9 @@ function Cards() {
 
   return (
     <>
-      <div className={classes.cardsContainer}>
-        <div className={classes.cardsRow}>
-          <div className={classes.cardsGrid}>
+      <div className={classes.marketContainer}>
+        <div className={classes.marketFlex}>
+          <div className={classes.gridCard}>
             {imagePaths
               .slice(0, numCards)
               .map((path, index) => (
