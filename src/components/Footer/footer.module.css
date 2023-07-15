@@ -67,6 +67,10 @@ footer .community_item {
     cursor: pointer;
 }
 
+footer .community_item:hover {
+    transform: scale(0.95);
+}
+
 footer .middle {
     display: flex;
     background-color: var(--background-secondary);

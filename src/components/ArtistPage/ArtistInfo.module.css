@@ -1,0 +1,312 @@
+* {
+  color: white;
+}
+
+.container{
+  align-items: flex-start;
+  background-color: var(--background);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  left: 0px;
+  margin: 0px;
+  /* min-height: 2958px; */
+  /* min-width: 1280px; */
+  mix-blend-mode: normal;
+  overflow-x: hidden;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+
+.artist_info{
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: auto;
+  mix-blend-mode: normal;
+  padding: 40px 0px;
+  position: relative;
+}
+
+.artist_info_section {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: auto;
+  position: relative;
+  width: 1050px;
+}
+
+.artist_name_button {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  gap: 100px;
+  height: auto;
+  position: relative;
+  width: fit-content;
+}
+
+.artist_info2 {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: auto;
+  position: relative;
+  width: 599px;
+}
+
+.artist_name {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 56.1px;
+  margin-top: -1.00px;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  width: 510px;
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.stats {
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  gap: 20px;
+  height: auto;
+  position: relative;
+  width: 510px;
+}
+
+.total_sale, .auctions, .artists {
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+}
+
+.x240k, .x100k {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 39.2px;
+  margin-top: -1.00px;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  color: var(--text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.total_sale2, .auctions2, .artists2, .the_internets {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 35.2px;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.bio, .web_links {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+  position: relative;
+}
+
+.bio2 {
+  align-self: stretch;
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 35.2px;
+  margin-top: -1.00px;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: left;
+  white-space: nowrap;
+  color: var(--caption--label-text);
+  font-family: var(--font-family-space_mono);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.bio2 .links {
+  width: fit-content;
+}
+
+.icons_links {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  gap: 10px;
+  height: auto;
+  position: relative;
+  width: fit-content;
+}
+
+.icon_social_media {
+  background-color: transparent;
+  cursor: pointer;
+  height: 32px;
+  min-width: 32px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.3s ease;
+  visibility: visible;
+}
+
+.icon_social_media:hover, .btn_copy:hover, .btn_plus:hover {
+  transform: scale(0.95);
+}
+
+.ct_as{
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  gap: 20px;
+  height: auto;
+  justify-content: flex-end;
+  position: relative;
+  width: fit-content;
+}
+
+.btn_copy {
+  align-items: center;
+  background-color: var(--call-to-action);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  height: 60px;
+  justify-content: center;
+  mix-blend-mode: normal;
+  padding: 0px 50px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.3s ease;
+  /* width: 186px; */
+}
+
+.btn_plus {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: var(--call-to-action);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  height: 56px;
+  justify-content: center;
+  padding: 0px 30px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.icon_copy {
+  background-color: transparent;
+  height: 20px;
+  margin-left: -29.50px;
+  min-width: 20px;
+  position: relative;
+}
+.icon_copy {
+  background-color: transparent;
+  height: 20px;
+  min-width: 20px;
+  position: relative;
+}
+
+.btn_copy_text {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 22.4px;
+  margin-right: -29.50px;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.btn_plus_text {
+  background-color: transparent;
+  letter-spacing: 0.00px;
+  line-height: 22.4px;
+  mix-blend-mode: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+  color: var(--text);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Phone */
+@media (max-width:480px) {
+  .container {
+    /* min-height: 3152px; */
+    min-width: 375px;
+  }
+}
+
+/* Tablet */
+@media (max-width:768px) {
+  .container {
+    /* min-height: 3237px; */
+    min-width: 834px;
+  }
+}
+
+/* Desktop */
+@media (max-width: 1025px) {
+
+}
