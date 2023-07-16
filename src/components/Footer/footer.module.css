@@ -51,6 +51,15 @@ footer .footer_explorep {
     gap: 1.25rem;
 }
 
+footer .footer_explorep a {
+    text-decoration: none;
+    color: #CCC;
+}
+
+footer .footer_explorep a:hover {
+    scale: 0.95
+}
+
 footer .community {
     display: flex;
     flex-direction: row;
@@ -58,6 +67,7 @@ footer .community {
     gap: 0.625rem;
     margin: 0.94rem 0 0 0;
 }
+
 
 footer .middlep {
     margin: 1.88rem 0 1.25rem 0;
@@ -75,6 +85,7 @@ footer .middle {
     display: flex;
     background-color: var(--background---secondary);
     flex-direction: column;
+    width: fit-content;
     justify-content: space-between;
 }
 
@@ -181,7 +192,7 @@ footer .footer_input_header {
     footer {
         padding: 2.5rem 2.5rem;
     }
-    
+
     footer .container {
         flex-direction: column;
     }

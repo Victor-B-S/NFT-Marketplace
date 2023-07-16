@@ -1,8 +1,8 @@
-import Card from "./UI/Card";
-
+import Card from "./components/UI/Card";
 import classes from "./Marketplace.module.css";
-import { imagePaths } from "./UI/imagePaths";
+import { imagePaths } from "./components/UI/imagePaths";
 import { useEffect, useState } from "react";
+
 
 function Marketplace() {
   

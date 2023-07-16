@@ -1,5 +1,5 @@
 import React from 'react'
-import Marketplace from '../components/Marketplace'
+import Marketplace from '../Marketplace'
 import Navbar from '../components/Navbar/navbar'
 import Footer from '../components/Footer/footer'
 

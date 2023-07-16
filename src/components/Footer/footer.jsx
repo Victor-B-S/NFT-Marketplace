@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import footer from './footer.module.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -24,9 +25,9 @@ function Footer() {
                 <div className={footer.middle}>
                     <h5>Explore</h5>
                     <div className={footer.footer_explorep}>
-                        <p>Marketplace</p>
-                        <p>Rankings</p>
-                        <p>Connect a wallet</p>
+                        <Link to="/marketplace">Marketplace</Link>
+                        <Link to="/rankings">Rankings</Link>
+                        <Link to ="/connect-wallet">Connect a wallet</Link>
                     </div>
                 </div>
                 <div className={footer.right}>
