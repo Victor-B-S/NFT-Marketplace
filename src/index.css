@@ -126,7 +126,7 @@ p {
     outline: none;
     cursor: pointer;
     text-align: center;
-    font-family: Work Sans;
+    font-family: var(--font-family-work_sans);
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;

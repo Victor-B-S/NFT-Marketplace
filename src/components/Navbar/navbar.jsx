@@ -23,7 +23,7 @@ function Navbar() {
         <div className={nav.menu_item}>
           <a href="connect">Connect a wallet</a>
         </div>
-        <button className={nav.btn_login}>
+        <button className='btn secondary filled'>
           <img src="../src/images/nav_login.svg" className={nav.btn_loginicon} />
           <a href="signUp">Sign Up</a>
         </button>

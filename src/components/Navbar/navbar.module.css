@@ -57,38 +57,6 @@ nav .menu_item a {
     text-decoration: none;
 }
 
-nav .btn_login {
-    display: flex;
-    height: 3.75rem;
-    padding: 0rem 1.875rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-    border-radius: 1.25rem;
-    border: none;
-    background: var(--call-to-action);
-}
-
-nav .btn_login:hover {
-    scale: 0.95;
-}
-
-nav .btn_loginicon {
-    background: var(--call-to-action);
-}
-
-nav .btn_login a {
-    color: #FFF;
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 140%;
-    text-decoration: none;
-    background: var(--call-to-action);
-}
-
 nav .burguer {
     display: none;
 }
