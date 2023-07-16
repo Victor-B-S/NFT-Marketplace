@@ -32,25 +32,25 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div className={classes.holder}>
-      <p>Auction Ends in:</p>
+      <p className={classes.timeDescriptor}>Auction Ends in:</p>
       <div className={classes.timer}>
         {/*<div className={classes.days}>
           {timeLeft.days && <span>{formatTime(timeLeft.days)}</span>}
           <span className={classes.timeDescriptor}>days</span>
         </div>*/}
         <div className={classes.hours}>
-          <span>{formatTime(timeLeft.hours)}</span>
-          <span className={classes.timeDescriptor}>hours</span>
+          <span className={classes.number}>{formatTime(timeLeft.hours)}</span>
+          <span className={classes.timeDescriptor}>Hours</span>
         </div>
         <div className={classes.spacer}>:</div>
         <div className={classes.minutes}>
-          <span>{formatTime(timeLeft.minutes)}</span>
-          <span className={classes.timeDescriptor}>minutes</span>
+          <span className={classes.number}>{formatTime(timeLeft.minutes)}</span>
+          <span className={classes.timeDescriptor}>Minutes</span>
         </div>
         <div className={classes.spacer}>:</div>
         <div className={classes.seconds}>
-          <span>{formatTime(timeLeft.seconds)}</span>
-          <span className={classes.timeDescriptor}>seconds</span>
+          <span className={classes.number}>{formatTime(timeLeft.seconds)}</span>
+          <span className={classes.timeDescriptor}>Seconds</span>
         </div>
       </div>
     </div>
