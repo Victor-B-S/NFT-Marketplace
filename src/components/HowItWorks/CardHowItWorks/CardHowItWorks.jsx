@@ -4,11 +4,13 @@ function CardHowItWorks(props) {
   return (
     <>
         <div className={classes.cardHiw}>
-          <div className={classes.cardIcons}>
-            <img src={props.image} alt="" />
+          <div>
+            <img className={classes.cardHiwImage}src={props.image} alt="" />
           </div>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+          <div className={classes.cardHiwTextContainer}>
+            <h3 className={classes.cardHiwTitle}>{props.title}</h3>
+            <p className={classes.cardHiwDescription}>{props.description}</p>
+          </div>
         </div>
     </>
   );

@@ -6,9 +6,64 @@
     background: #3B3B3B;
     display: flex;
     border-radius: 20px;
-    margin: 1rem;
-    padding: 12px;
+    margin: 5px;
+    padding: 10px;
     flex-direction: column;
-    align-items: center;
-    color: white;
+    color: #FFFFFF;
+}
+
+.cardHiwTextContainer {
+    padding-left: 0px;
+}
+
+.cardHiwTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22.4px;
+    text-align: center;
+}
+
+.cardHiwDescription {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.8px;
+    text-align: center;
+}
+
+
+@media (max-width: 480px) {
+    .cardHiw {
+        background: #3B3B3B;
+        display: flex;
+        border-radius: 20px;
+        margin: 1rem;
+        width: 315px;
+        height: 157px;
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+        color: #FFFFFF;
+        gap: 12px;
+    }    
+
+    .cardHiwImage {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .cardHiwTitle {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .cardHiwDescription {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+
+    .cardHiwTextContainer {
+        max-width: 200px;
+    }
 }
