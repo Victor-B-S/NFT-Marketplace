@@ -115,3 +115,49 @@ p {
     width: 2rem;
     height: 2rem;
 }
+
+.btn {
+    display: inline-flex;
+    padding: 0rem 3.125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 1.25rem;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+}
+
+.filled {
+    height: 4.5rem;
+    border-radius: 1.25rem;
+    background: var(--call-to-action);
+    border: none;
+}
+
+.outlined {
+    background: transparent;
+    border: 2px solid var(--call-to-action);
+}
+
+.btn:hover {
+    scale: 0.95;
+}
+
+.primary {
+    height: 4.5rem;
+}
+
+.secondary {
+    height: 3.75rem;
+}
+
+.tertiary {
+    height: 2.875rem;
+}

@@ -1,0 +1,48 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 30px;
+    max-width: 500px;
+}
+
+form span {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form .username {
+    background-image: url("../src/images/Register/User.svg");
+}
+
+form .email {
+    background-image: url("../src/images/Register/EnvelopeSimple.svg");
+}
+
+form .password {
+    background-image: url("../src/images/Register/LockKey.svg");
+}
+
+.input_container {
+    border-radius: 1.25rem;
+    border: 1px solid var(--caption-label-text);
+    background: var(--text);
+    display: flex;
+    padding: 0.75rem 1rem;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+}
+
+.input_container input {
+    border: none;
+    color: var(--background);
+    font-family: var(--font-family-work_sans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    outline: none;
+}
