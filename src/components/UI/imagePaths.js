@@ -1,5 +1,4 @@
 export const imagePaths = [
-<<<<<<< HEAD
     "./src/images/category-art.png",
     "./src/images/category-collectibles.png",
     "./src/images/category-music.png",
@@ -20,5 +19,4 @@ export const nftImagePaths = [
     "./src/images/NFTS/colorful_dog.png",
     "./src/images/NFTS/astrofiction.png",
     "./src/images/NFTS/life_on_endena.png",
-
 ];
