@@ -63,6 +63,11 @@
   align-items: end;
 }
 
+.card:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
 @media (max-width: 1025px) {
   .cardAuctionPrice p{
     font-size: 14px;

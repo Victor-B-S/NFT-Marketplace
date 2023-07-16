@@ -1,4 +1,5 @@
 export const imagePaths = [
+<<<<<<< HEAD
     "./src/images/category-art.png",
     "./src/images/category-collectibles.png",
     "./src/images/category-music.png",
@@ -7,7 +8,9 @@ export const imagePaths = [
     "./src/images/category-utility.png",
     "./src/images/category-video.png",
     "./src/images/category-virtual.png"
-];export const nftImagePaths = [
+];
+
+export const nftImagePaths = [
     "./src/images/NFTS/distant_galaxy.png",
     "./src/images/NFTS/astrofiction.png",
     "./src/images/NFTS/life_on_endena.png",
@@ -16,8 +19,6 @@ export const imagePaths = [
     "./src/images/NFTS/magic_mushroom.png",
     "./src/images/NFTS/colorful_dog.png",
     "./src/images/NFTS/astrofiction.png",
-    "./src/images/NFTS/life_on_endena.png"
-    
-
+    "./src/images/NFTS/life_on_endena.png",
 
 ];
