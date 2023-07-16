@@ -8,3 +8,9 @@ export const imagePaths = [
     "./src/images/category-video.png",
     "./src/images/category-virtual.png"
 ];
+
+export const iconPaths = [
+    "./src/images/icons/create.svg",
+    "./src/images/icons/setup.svg",
+    "./src/images/icons/start.svg",
+];

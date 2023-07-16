@@ -1,14 +1,16 @@
 import './App.css';
-import CardCateg from './components/UI/CardCateg';
-import BrowseCateg from './components/BrowseCateg';
-import CardHiw from './components/UI/CardHiw';
+import CardCateg from './components/BrowseCategory/CardCateg';
+import BrowseCateg from './components/BrowseCategory/BrowseCateg';
+import HowItWorks from './components/HowItWorks/HowItWorks';
+
 
 function App() {
   return (
     <div className="app">
-{/*       <CardCateg /> */}
-      <BrowseCateg /> 
+      {/*<CardCateg /> */}
+      {/* <BrowseCateg /> */}
       {/* <CardHiw /> */}
+      <HowItWorks /> 
     </div>
   )
 }

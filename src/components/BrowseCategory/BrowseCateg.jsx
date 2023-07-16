@@ -1,7 +1,7 @@
 import classes from "./BrowseCateg.module.css";
-import { imagePaths } from "./UI/imagePaths";
+import { imagePaths } from "../UI/imagePaths";
 import { useEffect, useState } from "react";
-import CardCateg from "./UI/CardCateg";
+import CardCateg from "./CardCateg";
 
 function Browse() {
     const [numCards, setNumCards] = useState(8);
@@ -14,7 +14,7 @@ function Browse() {
         }else{
           setNumCards(8);
         }
-    };
+    }; 
   
     window.addEventListener('resize', handleResize);
     handleResize(); 

@@ -1,0 +1,38 @@
+.hiwContainer {
+    background: var(--background, #2B2B2B);
+}
+
+.hiwTitle {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+  
+.hiwTitle h3 {
+    color: white;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 90px;
+}
+  
+.gridCard2 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 120px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .gridCard2 {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+  
+@media (max-width: 480px) {
+    .hiwSearch h3 {
+      font-size: 1.75rem;
+      margin-top: 15%;
+}}
