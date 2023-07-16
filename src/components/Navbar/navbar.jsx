@@ -17,7 +17,7 @@ function Navbar() {
           <a href="#">Rankings</a>
         </div>
         <div className={nav.menu_item}>
-          <a href="#">Connect a wallet</a>
+          <a href="">Connect a wallet</a>
         </div>
         <button className={nav.btn_login}>
           <img src="../src/images/nav_login.svg" className={nav.btn_loginicon} />
