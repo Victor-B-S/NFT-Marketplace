@@ -10,7 +10,6 @@ export default function NftHighlight() {
   return (
     <div className={classes.container}>
       <div className={classes.gradient}>
-        <p>Auction Ends in:</p>
         <CountdownTimer targetDate={targetDate} />
       </div>
     </div>

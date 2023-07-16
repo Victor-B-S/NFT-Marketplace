@@ -1,11 +1,44 @@
 *{
     color: white;
+    font-family: var(--font-family-space_mono);
+}
+
+.holder {
+    margin: auto;
+    background-color: var(--masala);
+    border-radius: 20px;
+    backdrop-filter: blur(10px) brightness(100%);
+    width: 15%;
+    padding: 30px;
 }
 
 .timer{
-    margin: auto;
-    background-color: lightgray;
-    width: 15%;
-
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    font-size: 38px;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.minutes {
+    display: flex;
+    flex-direction: column;
+}
+
+.seconds {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeDescriptor {
+    font-size: 14px;
 }

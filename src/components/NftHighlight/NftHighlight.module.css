@@ -12,6 +12,14 @@
     background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768) {
+    .container {
+        background-image: url("../../images/nft-highlight-screen-tablet@1x.png");
+    }
+}
 
+@media only screen and (max-width: 480px) {
+    .container {
+        background-image: url("../../images/nft-highlight-screen-mobile@1x.png");
+    }
 }
