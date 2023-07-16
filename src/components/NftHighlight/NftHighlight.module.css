@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/nft-highlight@1x.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 85vh;
+}
+
+.gradient {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
+}
+
+@media only screen and (max-width: 768px) {
+
+}
