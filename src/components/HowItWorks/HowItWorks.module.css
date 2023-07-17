@@ -1,59 +1,45 @@
 .hiwContainer {
     background: var(--background, #2B2B2B);
+    padding: 5rem 8rem;
 }
 
 .hiwTitle {
     color: #FFFFFF;
-    font-family: Work Sans;
+    font-family: var(--font-family-work_sans);
     font-weight: 600;
     font-size: 38px;
     font-style: normal;
     margin: 0;
-    padding-left: 90px;
 }
 
 .hiwDescription {
     color: #FFFFFF;
-    font-family: Work Sans;
+    font-family: var(--font-family-work_sans);
     font-weight: 400;
     font-size: 22px;
-    text-align: left; /* alinha o texto à esquerda */
-    padding: 30px; /* add espaçamento ao redor da descrição */
-    margin: 0;
-    padding-left: 90px;
-}
-  
-.gridCard2 {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 120px;
-    margin-top: 40px;
+    text-align: left;
+    padding: 0.62rem 0 2.5rem 0;
 }
 
 .hiwFlex {
     display: flex;
     flex-direction: row;
-    gap: 3px; /* espaço entre os cards */
-    max-width: 800px; /* largura máxima para o container flex */
-    margin: 0 auto; /* centraliza o container flex horizontalmente */
+    gap: 1.88rem;
+    justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .gridCard2 {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+@media (min-width:481px) and (max-width:768px) {
+    .hiwContainer {
+        padding: 2.5rem 4rem;
     }
 }
-  
+
 @media (max-width: 480px) {
-    .hiwSearch h3 {
-      font-size: 1.75rem;
-      margin-top: 15%;
+    .hiwContainer {
+        padding: 2rem 2rem;
     }
+
     .hiwFlex {
-        display: flex;
         flex-direction: column;
-        align-items: start;
-        padding: 0px 20px;
     }
 }

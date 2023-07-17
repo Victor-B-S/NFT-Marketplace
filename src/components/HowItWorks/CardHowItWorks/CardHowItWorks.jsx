@@ -8,7 +8,7 @@ function CardHowItWorks(props) {
             <img className={classes.cardHiwImage}src={props.image} alt="" />
           </div>
           <div className={classes.cardHiwTextContainer}>
-            <h3 className={classes.cardHiwTitle}>{props.title}</h3>
+            <div className={classes.cardHiwTitle}>{props.title}</div>
             <p className={classes.cardHiwDescription}>{props.description}</p>
           </div>
         </div>
