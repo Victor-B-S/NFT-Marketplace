@@ -1,0 +1,51 @@
+.bcategContainer {
+    background: var(--background, #2B2B2B);
+}
+
+.bcategTitle {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+  
+.bcategTitle h3 {
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 90px;
+}
+  
+.gridCard {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 120px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .gridCard {
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)) /* diminui o tamanho dos cards */
+      }
+    .bcategFlex {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px; /* espaçamento menor entre os cards */
+    }
+}
+  
+@media (max-width: 480px) {
+    .bcategSearch h3 {
+      font-size: 1.75rem;
+      margin-top: 15%;
+    }
+    .bcategFlex {
+        grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+        grid-template-columns: 1fr 1fr; /* divide em duas colunas iguais */
+        display: flex; /* altera o layout para flex */
+        flex-direction: column; /* alinha os cards em uma única coluna */
+        align-items: center; /* centraliza os cards horizontalmente */
+        padding: 20px; /* adiciona espaçamento interno */
+    }
+}
