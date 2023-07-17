@@ -4,7 +4,6 @@
 }
 
 .holder {
-    margin: auto;
     background-color: var(--masala);
     border-radius: 20px;
     backdrop-filter: blur(10px) brightness(100%);

@@ -7,6 +7,30 @@
     height: 85vh;
 }
 
+.content {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.artistCard {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-work_sans);
+    background-color: var(--background---secondary);
+}
+
+.artistCard > img {
+    width: 24px;
+    height: 24px;
+}
+
 .gradient {
     height: 100%;
     background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
