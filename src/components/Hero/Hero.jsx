@@ -2,7 +2,7 @@ import css from './Hero.module.css'
 
 function Hero() {
     return (
-        <>
+        <> 
             <section className={css.hero}>
                 <div className={css.info}>
                     <h1 className={css.h3}>Discover digital art & Collect NFTs</h1>
