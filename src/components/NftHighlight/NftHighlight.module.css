@@ -4,7 +4,6 @@
     background-image: url("../../images/nft-highlight@1x.png");
     background-size: cover;
     background-position: 50% 50%;
-    height: 85vh;
 }
 
 .content {
@@ -12,7 +11,7 @@
     align-items: flex-end;
     align-self: stretch;
     justify-content: center;
-    padding: 360px 195px 60px 195px;
+    padding: 15rem 10rem 3.75rem 10rem;
 }
 
 .artistCard {
@@ -28,7 +27,7 @@
     width: fit-content;
 }
 
-.artistCard > img {
+.artistCard>img {
     width: 24px;
     height: 24px;
 }
@@ -38,6 +37,20 @@
     flex-direction: column;
     gap: 30px;
     flex: 1;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile {
+    display: none;
+}
+
+.web {
+    display: block;
 }
 
 .seeNFT {
@@ -52,9 +65,14 @@
     background: var(--text, #FFF);
     width: fit-content;
     border: none;
+    cursor: pointer;
 }
 
-.seeNFT > span {
+.seeNFT:hover {
+    scale: 0.95;
+}
+
+.seeNFT>span {
     color: var(--background, #2B2B2B);
     font-family: var(--font-family-work_sans);
     font-size: 16px;
@@ -64,19 +82,18 @@
     text-align: center;
 }
 
-.seeNFT > img {
+.seeNFT>img {
     width: 20px;
     height: 20px;
 }
 
 .nftTitle {
     color: #FFF;
-
     font-family: var(--font-family-work_sans);
     font-size: 51px;
     font-style: normal;
     font-weight: 600;
-    line-height: 110%; /* 56.1px */
+    line-height: 110%;
 }
 
 .gradient {
@@ -84,14 +101,66 @@
     background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     .container {
         background-image: url("../../images/nft-highlight-screen-tablet@1x.png");
+    }
+
+    .content {
+        padding: 15rem 5rem 3.75rem 5rem;
+    }
+
+    .nftTitle {
+        font-size: 2.375rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
     }
 }
 
 @media only screen and (max-width: 480px) {
     .container {
         background-image: url("../../images/nft-highlight-screen-mobile@1x.png");
+    }
+
+    .content {
+        padding: 15rem 2rem 3.75rem 2rem;
+        flex-direction: column;
+    }
+
+    .nftTitle {
+        font-size: 2.375rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .right {
+        margin-top: 20px;
+        ;
+    }
+
+    .web {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile .seeNFT {
+        height: 60px;
+        padding: 22px 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        border-radius: 20px;
+        background: var(--text, #FFF);
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        margin-top: 2rem;
     }
 }
