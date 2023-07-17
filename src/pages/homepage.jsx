@@ -9,12 +9,14 @@ import Hero from '../components/Hero/Hero'
 import Subscribe from '../components/Subscribe'
 import Tops from '../components/TopCreators/Top'
 import Discover from '../components/Discover/Discover'
+import Trending from '../components/TrendingCollection/TrendingCollection'
 
 export default function () {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Trending />
       <Tops />
       <BrowseCateg />
       <Discover />
