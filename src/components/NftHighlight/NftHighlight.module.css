@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/nft-highlight@1x.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 85vh;
+}
+
+.content {
+    display: flex;
+    align-items: flex-end;
+    align-self: stretch;
+    justify-content: center;
+    padding: 360px 195px 60px 195px;
+}
+
+.artistCard {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-work_sans);
+    background-color: var(--background---secondary);
+    width: fit-content;
+}
+
+.artistCard > img {
+    width: 24px;
+    height: 24px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.seeNFT {
+    height: 60px;
+    padding: 22px 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--text, #FFF);
+    width: fit-content;
+    border: none;
+}
+
+.seeNFT > span {
+    color: var(--background, #2B2B2B);
+    font-family: var(--font-family-work_sans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+}
+
+.seeNFT > img {
+    width: 20px;
+    height: 20px;
+}
+
+.nftTitle {
+    color: #FFF;
+
+    font-family: var(--font-family-work_sans);
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 56.1px */
+}
+
+.gradient {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768) {
+    .container {
+        background-image: url("../../images/nft-highlight-screen-tablet@1x.png");
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        background-image: url("../../images/nft-highlight-screen-mobile@1x.png");
+    }
+}

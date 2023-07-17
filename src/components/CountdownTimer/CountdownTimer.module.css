@@ -1,0 +1,70 @@
+*{
+    color: white;
+    font-family: var(--font-family-space_mono);
+}
+
+.holder {
+    background-color: var(--masala);
+    border-radius: 20px;
+    backdrop-filter: blur(10px) brightness(100%);
+    padding: 30px;
+    width: 255px;
+    gap: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.timer{
+    display: flex;
+    flex-direction: row;
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    gap: 10px;
+    align-self: stretch;
+    align-items: flex-start;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    line-height: 46px;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.minutes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.seconds {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.number {
+    line-height: 46px;
+}
+
+.spacer {
+    line-height: 39px;
+    font-size: var(--font-size-xl);
+}
+
+.timeDescriptor {
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 13px;
+}
