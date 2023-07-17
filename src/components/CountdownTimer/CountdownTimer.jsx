@@ -31,7 +31,7 @@ const CountdownTimer = ({ targetDate }) => {
   };
 
   return (
-    <div className={classes.holder}>
+    <div className={classes.holder + ' ' + classes.backgroundEffects}>
       <p className={classes.timeDescriptor}>Auction Ends in:</p>
       <div className={classes.timer}>
         {/*<div className={classes.days}>
