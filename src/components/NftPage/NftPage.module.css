@@ -141,21 +141,26 @@
   .descriptionNftPage {
     margin-top: 20px;
   }
+  .descriptionNftPage h2{
+    font-size: 1.75rem;
+  }
 
   .createdNftPage {
     margin-top: 20px;
   }
   .moreArtisitNftPage {
     flex-direction: column;
+    align-items: center;
   }
 
   .moreArtisitNftPage h4 {
-    font-size: 1.75rem;
-    text-align: center;
+    font-size: 1.50rem;
+    
   }
 
   .moreArtisitNftPage button {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 10%;
   }
 }

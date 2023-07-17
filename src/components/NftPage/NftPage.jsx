@@ -43,7 +43,7 @@ function NftPage() {
             </div>
           </div>
 
-          <span>Description</span>
+          <span className={classes.spanStyleNftPage}>Description</span>
           <p>
             The Orbitians <br />
             is a collection of 10,000 unique NFTs on the Ethereum blockchain,
