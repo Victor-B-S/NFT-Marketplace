@@ -32,6 +32,7 @@ function TrendingCollection() {
                   title={"DSGN Animals"} 
                   image={imageMrFox} 
                   description={"Mr Fox"}
+                  className="dog-card" 
                 />
                 <CardTrendingCollection 
                   mushroomImage={mushroomImage} 
@@ -49,7 +50,8 @@ function TrendingCollection() {
                   additionalImage3={numberImage}
                   title={"Disco Machines"} 
                   image={imageBeKind2Robots}  
-                  description={"BeKind2Robots"} /> 
+                  description={"BeKind2Robots"}
+                /> 
             </div>
         </div>
       </div>

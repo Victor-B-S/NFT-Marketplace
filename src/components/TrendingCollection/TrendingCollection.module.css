@@ -57,14 +57,18 @@
 }
   
 @media (max-width: 480px) {
-    .trendingSearch h3 {
-      font-size: 1.75rem;
-      margin-top: 15%;
+    .trendingLowFlex {
+        flex-wrap: wrap; /* quebrar em várias linhas */
+        justify-content: center; 
     }
-    .trendingFlex {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 0px 20px;
+
+    /* esconde todos os cards, exceto o com a imagem do cachorro */
+    .trendingLowFlex .cardTrending {
+        display: none;
+    }
+
+    .trendingLowFlex .cardTrending.dog-card {
+        display: block;
+        flex-basis: 100%; /* toda a largura disponível */
     }
 }
