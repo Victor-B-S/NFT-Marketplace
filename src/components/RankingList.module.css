@@ -27,7 +27,13 @@
 .rankingArtistName {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
+
+.rankingArtistName:hover {
+  scale: 0.95
+}
+
 .rankingArtistName img {
   width: 2.765rem;
 }
@@ -58,6 +64,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
+
   .rankingPrice span:nth-child(2) {
     display: none;
   }
@@ -73,7 +80,7 @@
     width: 2rem;
   }
 
- 
+
 }
 
 @media (max-width: 480px) {

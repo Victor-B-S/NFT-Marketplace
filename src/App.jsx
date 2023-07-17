@@ -4,6 +4,7 @@ import Homepage from './pages/homepage';
 import ArtistPageLink from './pages/artistpage';
 import MarketplaceLink from './pages/marketplace';
 import Account from './pages/connect';
+import Ranking from './pages/rank';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Route path='/marketplace' element={<MarketplaceLink />}/>
       <Route path='/create-account' element={<Account forWhat='Create'/>}/>
       <Route path='/connect-wallet' element={<Account forWhat='Connect'/>}/>
+      <Route path='/ranking' element={<Ranking/>}/>
     </Routes>
   )
 }

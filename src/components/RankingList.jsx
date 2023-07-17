@@ -1,10 +1,7 @@
-/* eslint-disable react/prop-types */
 import classes from "./RankingList.module.css";
 import dbArtists from "../data/db.json";
-
+ 
 function RankingList() {
-  console.log("AQUI");
-
   return (
     <ul>
       {dbArtists.map((item, index) => {

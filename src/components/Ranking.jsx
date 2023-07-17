@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import classes from "./Ranking.module.css";
 import RankingList from "./RankingList";
 import { useState } from "react";
-
+ 
 function Ranking() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 

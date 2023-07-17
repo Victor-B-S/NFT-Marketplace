@@ -19,7 +19,7 @@ function Navbar() {
           <Link to="/marketplace">Marketplace</Link>
         </div>
         <div className={nav.menu_item}>
-        <Link to="/rankings">Rankings</Link>
+        <Link to="/ranking">Rankings</Link>
         </div>
         <div className={nav.menu_item}>
           <Link to ="/connect-wallet">Connect a wallet</Link>

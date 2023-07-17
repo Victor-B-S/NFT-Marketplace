@@ -1,7 +1,8 @@
 import classes from "./Card.module.css";
-import avatarImg from "../../images/Avatares/AvatarPlaceholder.png";
 
 function Card(props) {
+  const avatarImg = '../src/images/Avatares/Avatar1.png';
+  
   return (
     <>
       <div className={classes.card}>
