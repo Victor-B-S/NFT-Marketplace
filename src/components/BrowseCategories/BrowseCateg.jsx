@@ -4,7 +4,7 @@ import CardCateg from "../UI/CardCateg";
 
 function Browse() {
   const titles = ["Art", "Collectibles", "Music", "Photography", "Video", "Utility", "Sport", "Virtual Worlds"];
-
+ 
   const renderDivs = () => {
     const divs = [];
 

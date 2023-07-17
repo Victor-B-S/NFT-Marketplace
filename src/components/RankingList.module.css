@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+li a {
+  text-decoration: none;
+}
+
 .rankingArtistName:hover {
   scale: 0.95
 }

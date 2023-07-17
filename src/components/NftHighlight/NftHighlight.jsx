@@ -1,12 +1,12 @@
 import React from 'react'
 import CountdownTimer from '../CountdownTimer/CountdownTimer'
-
+import { Link } from 'react-router-dom';
 import classes from "./NftHighlight.module.css"
 
 export default function NftHighlight() {
 
   const targetDate = '2023-07-21T23:59:59';
- 
+
   return (
     <section className={classes.container}>
       <div className={classes.gradient}>
@@ -15,13 +15,13 @@ export default function NftHighlight() {
             <div className={classes.artistCard}><img src="../src/images/Avatar-7.png" />Shroomie</div>
             <h3 className={classes.nftTitle}>Magic Mushrooms</h3>
             <div className={classes.web}>
-              <button className={classes.seeNFT}><img src="../src/images/Eye.svg" /><span>See NFT</span></button>
+              <Link to='/nft-page'><button className={classes.seeNFT}><img src="../src/images/Eye.svg" /><span>See NFT</span></button></Link>
             </div>
           </div>
           <div className={classes.right}>
             <CountdownTimer targetDate={targetDate} />
             <div className={classes.mobile}>
-              <button className={classes.seeNFT}><img src="../src/images/Eye.svg" /><span>See NFT</span></button>
+              <Link to='/nft-page'><button className={classes.seeNFT}><img src="../src/images/Eye.svg" /><span>See NFT</span></button></Link>
             </div>
           </div>
         </div>
