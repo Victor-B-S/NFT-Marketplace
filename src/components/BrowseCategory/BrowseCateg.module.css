@@ -27,7 +27,11 @@
 
 @media (max-width: 768px) {
     .gridCard {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)) /* diminui o tamanho dos cards */
+      }
+    .bcategFlex {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px; /* espaçamento menor entre os cards */
     }
 }
   
@@ -35,4 +39,13 @@
     .bcategSearch h3 {
       font-size: 1.75rem;
       margin-top: 15%;
-}}
+    }
+    .bcategFlex {
+        grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+        grid-template-columns: 1fr 1fr; /* divide em duas colunas iguais */
+        display: flex; /* altera o layout para flex */
+        flex-direction: column; /* alinha os cards em uma única coluna */
+        align-items: center; /* centraliza os cards horizontalmente */
+        padding: 20px; /* adiciona espaçamento interno */
+    }
+}

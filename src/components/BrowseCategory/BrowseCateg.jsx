@@ -1,14 +1,14 @@
 import classes from "./BrowseCateg.module.css";
 import { imagePaths } from "../UI/imagePaths";
 import { useEffect, useState } from "react";
-import CardCateg from "./CardCateg";
+import CardCateg from "./CardCategory/CardCateg";
 
-function Browse() {
+function BrowseCategory() {
     const [numCards, setNumCards] = useState(8);
     useEffect(() => {
       const handleResize = () => {
         if(window.innerWidth <= 480){
-          setNumCards(8);
+          setNumCards(2);
         }else if((window.innerWidth <= 768) && (window.innerWidth > 480)){
           setNumCards(8);
         }else{
@@ -46,4 +46,4 @@ function Browse() {
   );
 }
   
-export default Browse;
+export default BrowseCategory;
