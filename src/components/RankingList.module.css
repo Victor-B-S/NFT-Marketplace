@@ -1,0 +1,112 @@
+.rankingList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--background-secondary, #3b3b3b);
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.rankingArtist {
+  display: flex;
+  align-items: center;
+}
+
+.rankingArtist span {
+  background: var(--background, #2b2b2b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--caption-label-text, #858584);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 1.3rem;
+}
+
+.rankingArtistName {
+  display: flex;
+  align-items: center;
+}
+.rankingArtistName img {
+  width: 2.765rem;
+}
+
+.rankingArtistName h4 {
+  font-family: Work Sans;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+  margin-left: 1rem;
+}
+
+.rankingPrice {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  align-items: center;
+}
+
+.rankingPrice span:first-child {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .rankingPrice {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .rankingPrice span:nth-child(2) {
+    display: none;
+  }
+
+  .rankingArtist span {
+    background: var(--background-secondary, #3b3b3b);
+    width: 1rem;
+    height: 1rem;
+    margin: 0 1rem;
+  }
+
+  .rankingArtistName img {
+    width: 2rem;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .rankingList {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rankingPrice {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-right: 5%;
+  }
+
+  .rankingPrice span {
+    font-size: 0.75rem;
+  }
+
+  .rankingPrice span:nth-child(1),
+  .rankingPrice span:nth-child(2) {
+    display: none;
+  }
+
+  .rankingArtistName h4 {
+    font-size: 1rem;
+  }
+
+  .rankingArtistName img {
+    width: 1.5rem;
+  }
+
+  .rankingArtist span {
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+  }
+}

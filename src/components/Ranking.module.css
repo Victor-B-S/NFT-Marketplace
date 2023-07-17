@@ -1,0 +1,133 @@
+
+.rankingContainer {
+  width: 85%;
+  margin: 0 auto;
+  font-size: var(--font-family-work_sans);
+}
+
+.rankingDescription {
+  margin: 4% 0;
+}
+
+.rankingDescription h2 {
+    font-size: 3.1875rem;
+    
+  }
+.rankingDescription p {
+  font-size: 1.375rem;
+  padding: 2% 0;
+}
+
+.rankingFilter {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 20px 0;
+  
+}
+
+.rankingFilter span {
+  font-family: var(--font-family-work_sans);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  padding-bottom: 15px;
+  color: var(--caption-label-text, #858584);
+}
+.rankingFilter span:first-child {
+    border-bottom: 2px solid #858584;
+    color: white;
+    text-align: center;
+    width: 100%;
+    
+  }
+
+.ranking{
+    margin: 25px 0;
+}
+
+.rankingListExample {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--caption-label-text, #858584);
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 0.75rem 0;
+}
+
+.rankingArtistExample {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rankingArtistExample span:nth-child(1) {
+  margin: 0 2rem;
+}
+
+.rankingPriceExample {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .rankingPriceExample {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  .rankingPriceExample span:nth-child(2) {
+    display: none;
+  }
+  .rankingArtistExample span:nth-child(1) {
+    margin: 0 1.2rem;
+    
+  }
+  .rankingFilter span{
+      font-size: 1rem; 
+  }
+
+  .rankingDescription h2 {
+    font-size: 2.375rem;
+    
+  }
+
+  .rankingDescription p {
+    font-size: 1rem;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  
+    .rankingPriceExample {
+    grid-template-columns: 1fr;
+    justify-items: end;
+    padding-right: 18px;
+  }
+
+  .rankingPriceExample span:nth-child(2),
+  .rankingPriceExample span:nth-child(3) {
+    display: none;
+  }
+
+  .rankingListExample{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rankingArtistExample span:nth-child(1) {
+    margin: 0 1.2rem;
+    
+  }
+
+  .rankingDescription h2 {
+    font-size: 1.375rem;
+    
+  }
+
+  .rankingDescription p {
+    font-size: 1rem;
+    
+  }
+}
