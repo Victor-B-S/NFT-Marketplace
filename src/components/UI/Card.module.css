@@ -13,7 +13,7 @@
 }
 
 .cardInfo {
-  padding: 0 1.875rem;
+  padding: 0 0.675rem;
   color: var(--white, #fff);
 }
 
@@ -73,7 +73,7 @@
     font-size: 14px;
   }
   .cardInfo{
-    padding: 0 1.375rem;
+    padding: 0 0.675rem;
   }
 }
 
@@ -81,7 +81,7 @@
 /*TABLET*/
 @media (max-width:768px) { 
   .cardInfo{
-    padding: 0 1.375rem;
+    padding: 0 0.675rem;
   }
   
   .cardAuctionPrice p{

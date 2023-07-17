@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import classes from "./CountdownTimer.module.css";
 
 const CountdownTimer = ({ targetDate }) => {
@@ -39,17 +39,17 @@ const CountdownTimer = ({ targetDate }) => {
           <span className={classes.timeDescriptor}>days</span>
         </div>*/}
         <div className={classes.hours}>
-          <span className={classes.number}>{formatTime(timeLeft.hours)}</span>
+        <span className={classes.number}>{formatTime(timeLeft.hours)}</span>
           <span className={classes.timeDescriptor}>Hours</span>
         </div>
         <div className={classes.spacer}>:</div>
         <div className={classes.minutes}>
-          <span className={classes.number}>{formatTime(timeLeft.minutes)}</span>
+        <span className={classes.number}>{formatTime(timeLeft.minutes)}</span>
           <span className={classes.timeDescriptor}>Minutes</span>
         </div>
         <div className={classes.spacer}>:</div>
         <div className={classes.seconds}>
-          <span className={classes.number}>{formatTime(timeLeft.seconds)}</span>
+        <span className={classes.number}>{formatTime(timeLeft.seconds)}</span>
           <span className={classes.timeDescriptor}>Seconds</span>
         </div>
       </div>
@@ -58,3 +58,9 @@ const CountdownTimer = ({ targetDate }) => {
 };
 
 export default CountdownTimer;
+
+/* 
+<span className={classes.number}>{formatTime(timeLeft.hours)}</span>
+ <span className={classes.number}>{formatTime(timeLeft.minutes)}</span>
+ <span className={classes.number}>{formatTime(timeLeft.seconds)}</span>
+*/
