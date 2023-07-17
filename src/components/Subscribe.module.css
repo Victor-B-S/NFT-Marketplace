@@ -1,16 +1,50 @@
+.subscribeWidget {
+    padding: 10vh 10vw;
+}
+
 .subscribeWidgetContent {
     display: flex;
     align-items: center;
     gap: 80px;
     align-self: stretch;
     padding: 60px;
+    margin: auto;
+    background-color: black;
+    border-radius: 20px;
+    
+}
+
+.subscribeWidgetText > h3 {
+    color: var(--white, #FFF);
+    /* H3 - Work Sans */
+    font-family: Work Sans;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    align-self: stretch;
+    
+}
+
+.subscribeWidgetText > p {
+    color: var(--white, #FFF);
+    /* Body Text- Work Sans */
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
 }
 
 .subscribeWidgetContentImg {
     height: 310px;
+    width: 100%;
     flex: 1 0 0;
     border-radius: 20px;
-    background: url(../images/Astronaut.png), lightgray 50% / cover no-repeat;
+    background: url(../images/Astronaut.png), lightgray 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .subscribeWidgetForm {
@@ -19,4 +53,67 @@
     align-items: flex-start;
     gap: 40px;
     flex: 1 0 0;
+}
+
+.subscribeWidgetInputHolder {
+    display: flex;
+    height: 60px;
+    align-items: center;
+
+    align-self: stretch;
+    padding-left: 20px;
+    border-radius: 20px;
+    background: var(--text, #FFF);
+}
+
+.subscribeWidgetInput {
+    flex: 1;
+    color: var(--background, #2B2B2B);
+    outline: none;
+    border: none;
+}
+
+.subscribeWidgetBtn {
+    display: flex;
+    gap: 12px;
+    padding: 0 50px;
+    background: var(--call-to-action, #A259FF);
+    border-radius: 20px;
+    height: 60px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subscribeWidgetBtn:hover {
+    scale: 0.95;
+}
+
+.subscribeWidgetBtn > img {
+    width: 20px;
+    height: 20px;
+}
+
+.subscribeWidgetBtnFont {
+    color: #FFF;
+    font-family: var(--font-family-work_sans);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+@media only screen and (min-width:481px) and (max-width:1024px) {
+    .subscribeWidgetContentImg {
+        height: 280px;
+        flex: 1 0 0;
+        border-radius: 20px;
+        background: url(../images/Astronaut.png), lightgray 50% / cover no-repeat;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    .subscribeWidgetInput {
+        flex-direction: column;
+    }
 }

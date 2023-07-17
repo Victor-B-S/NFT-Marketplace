@@ -3,19 +3,23 @@ import classes from './Subscribe.module.css'
 
 export default function Subscribe() {
   return (
-    <div className={classes.subscribeWidget}>
+    <section className={classes.subscribeWidget}>
         <div className={classes.subscribeWidgetContent}>
             <div className={classes.subscribeWidgetContentImg}></div>
             <div className={classes.subscribeWidgetForm}>
                 <div className={classes.subscribeWidgetText}>
-                    <h1>teste</h1>
-                    <p>teste2</p>
+                    <h3>Join Our Weekly Digest</h3>
+                    <p>Get Exclusive Promotions & Updates Straight To Your Inbox</p>
                 </div>
-                <div className={classes.subscribeWidgetButton}>
-                    teste4
+                <div className={classes.subscribeWidgetInputHolder}>
+                    <input type="email" className={classes.subscribeWidgetInput} placeholder="Enter your email here" />
+                    <div className={classes.subscribeWidgetBtn}>
+                        <img src="../src/images/EnvelopeSimple.svg" />
+                        <div className={classes.subscribeWidgetBtnFont}>Subscribe</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
