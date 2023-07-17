@@ -17,7 +17,7 @@
 }
 
 .additionalImagesContainer {
-    /* Estilos para o contêiner das imagens adicionais */
+    /* 3 imagens adicionais */
     display: flex;
     gap: 13px;
 }

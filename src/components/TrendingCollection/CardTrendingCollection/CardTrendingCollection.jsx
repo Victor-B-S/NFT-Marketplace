@@ -4,15 +4,24 @@ function CardTrendingCollection(props) {
     return (
       <>
         <div className={classes.cardTrending}>
-          <div className={classes.cardTrendingDogContainer}>
-            {/* imagem "dog.png" acima das imagens adicionais */}
-            {props.dogImage && (
-              <img
-                className={classes.cardTrendingImage}
-                src={props.dogImage}
-                alt=""
-              />
+            <div className={classes.cardTrendingDogContainer}>
+              {props.dogImage && (
+                <img
+                    className={classes.cardTrendingImage}
+                    src={props.dogImage}
+                    alt=""
+                />
             )}
+            {/* renderiza a imagem "mushroom.png" se a propriedade mushroomImage for passada */}
+            <div className={classes.cardingTrendingMushContainer}/>
+              {props.mushroomImage && (
+                <img
+                className={classes.cardTrendingImage}
+                src={props.mushroomImage}
+                alt=""
+                />
+            )}
+
             <div className={classes.additionalImagesContainer}>
               {/* imagens adicionais em colunas abaixo da imagem "dog.png" */}
               {props.additionalImage && (

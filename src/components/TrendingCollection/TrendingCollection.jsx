@@ -5,8 +5,12 @@ import imageShraamie from "../../images/Icons/shraamie.svg"
 import imageBeKind2Robots from "../../images/Icons/kind-robots.svg"
 import bearImage from "../../images/bear.png"
 import catImage from "../../images/cat.png"
-import numberImage from "../../images/number.png"
 import dogImage from "../../images/dog.png"
+import numberImage from "../../images/number.png"
+
+import mushroomImage from "../../images/mushroom.png"
+import mush2Image from "../../images/mushroom2.png"
+import mush3Image from "../../images/mushroom3.png"
 
 function TrendingCollection() {
     return (
@@ -26,11 +30,16 @@ function TrendingCollection() {
                   title={"DSGN Animals"} 
                   image={imageMrFox} 
                   description={"Mr Fox"}
-                   />
+                />
                 <CardTrendingCollection 
+                  mushroomImage={mushroomImage} 
+                  additionalImage={mush2Image}
+                  additionalImage2={mush3Image}
+                  additionalImage3={numberImage}
                   title={"Magic Mushrooms"} 
                   image={imageShraamie}  
-                  description={"Shroomie"} />
+                  description={"Shroomie"} 
+                />
                 <CardTrendingCollection 
                   title={"Disco Machines"} 
                   image={imageBeKind2Robots}  
