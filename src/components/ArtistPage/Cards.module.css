@@ -1,6 +1,6 @@
 .marketContainer {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: auto;
   position: relative;
   background: var(--background-secondary, #3b3b3b);
 }
@@ -124,13 +124,8 @@
 }
 
 
-@media (max-width: 768px) {
-  .gridCard {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
+/* # Phone */
+@media (max-width:480px) {
   .marketSearch h3 {
     font-size: 1.75rem;
     margin-top: 15%;
@@ -164,3 +159,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* # Tablet */
+@media (min-width:481px) and (max-width:768px) {
+  .gridCard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* # Desktop */
+@media (min-width:769px) {
+
+}
+
