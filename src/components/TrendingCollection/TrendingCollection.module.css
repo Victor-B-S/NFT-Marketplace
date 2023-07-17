@@ -1,0 +1,74 @@
+.trendingContainer {
+    background: var(--background, #3B3B3B);
+    display: flex;
+    flex-direction: column;
+}
+
+.trendingTitle {
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 38px;
+    font-style: normal;
+    margin: 0;
+    padding-left: 90px;
+    margin-bottom: 15px;
+}
+
+.trendingDescription {
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: left; /* alinha o texto à esquerda */
+    padding: 30px; /* add espaçamento ao redor da descrição */
+    margin-top: -30px;
+    padding-left: 90px;
+}
+
+.imagesIcon {
+    display: flex;
+    flex-direction: center;
+}
+  
+.gridCard3 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 120px;
+    margin-top: 40px;
+}
+
+.threeSmallSquare {
+    display: flex;
+}
+
+.trendingLowFlex {
+    display: flex;
+    gap: 3px;
+    max-width: 800px;
+    margin-left: 82px;
+}
+
+@media (max-width: 768px) {
+    .gridCard3 {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+  
+@media (max-width: 480px) {
+    .trendingLowFlex {
+        flex-wrap: wrap; /* quebrar em várias linhas */
+        justify-content: center; 
+    }
+
+    /* esconde todos os cards, exceto o com a imagem do cachorro */
+    .trendingLowFlex .cardTrending {
+        display: none;
+    }
+
+    .trendingLowFlex .cardTrending.dog-card {
+        display: block;
+        flex-basis: 100%; /* toda a largura disponível */
+    }
+}

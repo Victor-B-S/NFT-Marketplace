@@ -1,0 +1,87 @@
+.app {
+    background: var(--background, #2B2B2B);   
+}
+
+.cardTrending {
+    background: #3B3B3B;
+    display: flex;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    color: #FFFFFF;
+    flex-direction: column;
+}
+
+.threeSmallSquare {
+    background: #A259FF;
+}
+
+.additionalImagesContainer {
+    /* 3 imagens adicionais */
+    display: flex;
+    gap: 13px;
+}
+
+.cardTrendingTitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.cardTrendingIcon {
+    display: flex;
+    align-items: end;
+}
+
+.cardTrendingIconContainer {
+    display: flex;
+    flex-direction: initial;
+    padding-right: 70px;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardTrendingDescription {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16.8px;
+    text-align: start;
+}
+
+
+@media (max-width: 480px) {
+    .cardTrending {
+        background: #3B3B3B;
+        display: flex;
+        border-radius: 20px;
+        margin: 1rem;
+        width: 315px;
+        height: 157px;
+        padding: 20px;
+        flex-direction: row;
+        align-items: center;
+        color: #FFFFFF;
+        gap: 12px;
+    }    
+
+    .cardTrending {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .cardTrendingTitle {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .cardTrendingDescription {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+
+    .cardTrendingTextContainer {
+        max-width: 200px;
+    }
+}
