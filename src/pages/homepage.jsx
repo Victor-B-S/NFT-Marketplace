@@ -6,6 +6,7 @@ import HowWorks from '../components/HowItWorks/HowItWorks'
 import NFTHighlight from '../components/NftHighlight/NftHighlight'
 // import Trending from '../components/TrendingCollection/TrendingCollection';
 import Hero from '../components/Hero/Hero'
+import Subscribe from '../components/Subscribe'
 
 export default function () {
   return (
@@ -15,7 +16,7 @@ export default function () {
       <BrowseCateg />
       <NFTHighlight />
       <HowWorks />
-      
+      <Subscribe />
     </div>
   )
 }

@@ -11,17 +11,15 @@
     margin: auto;
     background-color: var(--background---secondary);
     border-radius: 20px;
-    
 }
 
 .subscribeWidgetText > h3 {
-    color: var(--white, #FFF);
-    /* H3 - Work Sans */
+    color: var(--white);
     font-family: Work Sans;
     font-size: 38px;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 45.6px */
+    line-height: 120%;
     align-self: stretch;
     
 }
