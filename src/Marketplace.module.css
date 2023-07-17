@@ -20,7 +20,7 @@
   grid-column: 2;
 }
 
-.marketFlex:nth-child(3){
+.marketFlex:nth-child(3) {
   display: grid;
 }
 
@@ -39,25 +39,29 @@
   font-weight: 600;
   margin: 0;
 }
+
 .marketSearch p {
   font-family: Work Sans;
   font-size: 1.375rem;
   margin: 2% 0 4% 0;
 }
+
 .marketSearch input {
   font-size: 1.2rem;
   width: 95%;
   padding: 20px;
   border-radius: 20px;
   background-color: transparent;
+  outline: none;
   color: var(--caption-label-text, #858584);
   border: 1px solid var(--background-secondary, #3b3b3b);
-  background-image: url("../images/Icons/MagnifyingGlass.png");
+  background-image: url("../src/images/Icons/MagnifyingGlass.png");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position-x: 96%;
 }
+
 
 .marketFilter {
   display: grid;

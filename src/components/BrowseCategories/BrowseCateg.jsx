@@ -1,49 +1,39 @@
 import classes from "./BrowseCateg.module.css";
 import { imagePaths } from "../UI/imagePaths";
-import { useEffect, useState } from "react";
 import CardCateg from "../UI/CardCateg";
 
 function Browse() {
-    const [numCards, setNumCards] = useState(8);
-    useEffect(() => {
-      const handleResize = () => {
-        if(window.innerWidth <= 480){
-          setNumCards(8);
-        }else if((window.innerWidth <= 768) && (window.innerWidth > 480)){
-          setNumCards(8);
-        }else{
-          setNumCards(8);
-        }
-    };
-  
-    window.addEventListener('resize', handleResize);
-    handleResize(); 
-  
-    return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+  const titles = ["Art", "Collectibles", "Music", "Photography", "Video", "Utility", "Sport", "Virtual Worlds"];
 
-    const titles = ["Art", "Collectibles", "Music", "Photography", "Sport", "Utility", "Video", "Virtual Worlds"];
-  
-    return (
+  const renderDivs = () => {
+    const divs = [];
+
+    imagePaths.forEach((imagePath, index) => {
+      const numero = index;
+
+      divs.push(
+        <CardCateg key={index} categImages={imagePath} numero={numero} title={titles[index % titles.length]} />
+      );
+    });
+    return divs;
+  };
+
+
+
+  return (
     <>
-      <div className={classes.bcategContainer}>
+      <section className={classes.bcategContainer}>
         <div className={classes.bcategTitle}>
           <h3>Browse Categories</h3>
         </div>
         <div className={classes.bcategFlex}>
           <div className={classes.gridCard}>
-            {imagePaths
-              .slice(0, numCards)
-              .map((path, index) => (
-              <CardCateg key={index} categImages={path} title={titles[index % titles.length]} />
-            ))}        
+            {renderDivs()}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
-  
+
 export default Browse;

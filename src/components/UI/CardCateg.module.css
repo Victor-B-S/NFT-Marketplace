@@ -1,5 +1,5 @@
 .app {
-    background: var(--background);   
+    background: var(--background);
 }
 
 .cardCateg {
@@ -13,7 +13,28 @@
     scale: 0.95;
 }
 
+.cardImage {
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    display: flex;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardIcon {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(7.95px);
+}
+
 .cardCateg h5 {
+    padding: 1.25rem 1.875rem 1.5625rem 1.875rem;
     color: var(--white);
-    padding-left: 10%; 
+    font-family: var(--font-family-work_sans);
+    padding-left: 10%;
 }

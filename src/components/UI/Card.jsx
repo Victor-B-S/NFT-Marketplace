@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-
-
 import classes from "./Card.module.css";
 import avatarImg from "../../images/Avatares/AvatarPlaceholder.png";
 

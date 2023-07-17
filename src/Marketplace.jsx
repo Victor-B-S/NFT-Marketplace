@@ -38,6 +38,7 @@ function Marketplace() {
             <h3>Browse Marketplace</h3>
             <p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
             <input type="text" placeholder="Search your favourite NFTs" />
+            
           </div>
         </div>
       </div>

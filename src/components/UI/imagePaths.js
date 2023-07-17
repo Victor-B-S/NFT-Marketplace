@@ -1,14 +1,14 @@
 export const imagePaths = [
-    "./src/images/category-art.png",
-    "./src/images/category-collectibles.png",
-    "./src/images/category-music.png",
-    "./src/images/category-photography.png",
-    "./src/images/category-sport.png",
-    "./src/images/category-utility.png",
-    "./src/images/category-video.png",
-    "./src/images/category-virtual.png"
+    "./src/images/Categories/art.svg",
+    "./src/images/Categories/collectibles.svg",
+    "./src/images/Categories/music.svg",
+    "./src/images/Categories/photography.svg",
+    "./src/images/Categories/video.svg",
+    "./src/images/Categories/utility.svg",
+    "./src/images/Categories/sport.svg",
+    "./src/images/Categories/virtual.svg",
 ];
-
+ 
 export const nftImagePaths = [
     "./src/images/NFTS/distant_galaxy.png",
     "./src/images/NFTS/astrofiction.png",
@@ -19,4 +19,15 @@ export const nftImagePaths = [
     "./src/images/NFTS/colorful_dog.png",
     "./src/images/NFTS/astrofiction.png",
     "./src/images/NFTS/life_on_endena.png",
+];
+
+export const iconPathsCategories = [
+    "./src/images/icons/paintBrush.svg",
+    "./src/images/icons/swatches.svg",
+    "./src/images/icons/MusicNotes.svg",
+    "./src/images/icons/Camera.svg",
+    "./src/images/icons/VideoCamera.svg",
+    "./src/images/icons/MagicWand.svg",
+    "./src/images/icons/Basketball.svg",
+    "./src/images/icons/Planet.svg",
 ];
