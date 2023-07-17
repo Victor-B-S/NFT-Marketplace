@@ -1,7 +1,7 @@
 import classes from "./RankingList.module.css";
 import dbArtists from "../data/db.json";
 import { Link } from 'react-router-dom';
-
+ 
 function RankingList() {
   return (
     <ul>
