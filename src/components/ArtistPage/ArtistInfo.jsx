@@ -28,6 +28,16 @@ function ArtistInfo() {
     };
   }, []);
 
+  function handleClickCopy(e) {
+    e.preventDefault();
+    console.log('Button Copy Clicked!!');
+  }
+
+  function handleClickFollow(e) {
+    e.preventDefault();
+    console.log('Button Follow Clicked!!');
+  }
+
   return (
     <>
       <div className={classes.container}>
@@ -72,7 +82,7 @@ function ArtistInfo() {
                   </div>
                 </div>
                 <div className={classes.ct_as}>
-                  <button className='btn secondary filled'>
+                  <button className='btn secondary filled' onClick={handleClickCopy}>
                     <img className={classes.icon_copy} src="/src/images/copy_icon.svg" alt="icon-copy"/>
                     <div className={classes.btn_copy_text}>0xc0E3...B79C</div>
                   </button>
@@ -84,7 +94,7 @@ function ArtistInfo() {
                     <img className={classes.icon_copy} src="/src/images/copy_icon.svg" alt="icon-copy"/>
                     <div className={classes.btn_copy_text}>0xc0E3...B79C</div>
                   </div> */}
-                  <div className={classes.btn_plus}>
+                  <div className={classes.btn_plus} onClick={handleClickFollow}>
                     <img className={classes.icon_plus} src="/src/images/plus_icon.svg" alt="Plus"/>
                     <div className={classes.btn_plus_text}>Follow</div>
                   </div>
@@ -100,11 +110,19 @@ function ArtistInfo() {
                 <div className={classes.artist_info2}>
                   <div className={classes.artist_name}>Animakid</div>
                   <div className={classes.ct_as}>
-                    <div className={classes.btn_copy}>
+                    <button className='btn secondary filled' onClick={handleClickCopy}>
                       <img className={classes.icon_copy} src="/src/images/copy_icon.svg" alt="icon-copy"/>
                       <div className={classes.btn_copy_text}>0xc0E3...B79C</div>
-                    </div>
-                    <div className={classes.btn_plus}>
+                    </button>
+                    {/* <button className='btn secondary outline'>
+                      <img className={classes.icon_plus} src="/src/images/plus_icon.svg" alt="Plus"/>
+                      <div className={classes.btn_plus_text}>Follow</div>
+                    </button> */}
+                    {/* <div className={classes.btn_copy}>
+                      <img className={classes.icon_copy} src="/src/images/copy_icon.svg" alt="icon-copy"/>
+                      <div className={classes.btn_copy_text}>0xc0E3...B79C</div>
+                    </div> */}
+                    <div className={classes.btn_plus} onClick={handleClickFollow}>
                       <img className={classes.icon_plus} src="/src/images/plus_icon.svg" alt="Plus"/>
                       <div className={classes.btn_plus_text}>Follow</div>
                     </div>
