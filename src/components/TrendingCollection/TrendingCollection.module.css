@@ -1,5 +1,7 @@
 .trendingContainer {
-    background: var(--background, #2B2B2B);
+    background: var(--background, #3B3B3B);
+    display: flex;
+    flex-direction: column;
 }
 
 .trendingTitle {
@@ -10,6 +12,7 @@
     font-style: normal;
     margin: 0;
     padding-left: 90px;
+    margin-bottom: 15px;
 }
 
 .trendingDescription {
@@ -19,7 +22,7 @@
     font-size: 22px;
     text-align: left; /* alinha o texto à esquerda */
     padding: 30px; /* add espaçamento ao redor da descrição */
-    margin: 0;
+    margin-top: -30px;
     padding-left: 90px;
 }
 
@@ -42,11 +45,9 @@
 
 .trendingLowFlex {
     display: flex;
-    gap: 3px; /* espaço entre os cards */
-    max-width: 800px; /* largura máxima para o container flex */
-    margin: 0 auto; /* centraliza o container flex horizontalmente */
-    flex-direction: row;
-    align-items: flex-start; /* Alinha os elementos à esquerda */
+    gap: 3px;
+    max-width: 800px;
+    margin-left: 82px;
 }
 
 @media (max-width: 768px) {

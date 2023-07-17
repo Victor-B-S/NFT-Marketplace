@@ -22,6 +22,16 @@ function CardTrendingCollection(props) {
                 />
             )}
 
+            {/* renderiza a imagem "machine.png" se a propriedade machinemage for passada */}
+            <div className={classes.cardingTrendingMachineContainer}/>
+              {props.machineImage && (
+                <img
+                className={classes.cardTrendingImage}
+                src={props.machineImage}
+                alt=""
+                />
+            )}
+
             <div className={classes.additionalImagesContainer}>
               {/* imagens adicionais em colunas abaixo da imagem "dog.png" */}
               {props.additionalImage && (
