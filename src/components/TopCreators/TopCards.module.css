@@ -92,10 +92,60 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        gap: 1rem;
     }
 
     .card {
         flex-direction: row;
+        padding: 0.75rem;
+    }
+
+    .card .top {
+        margin-top: 0;
+        margin-left: -1.5rem;
+    }
+
+    .card .image {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .card .mobile {
+        display: flex;
+        flex-direction: column; 
+        margin-left: 0.2rem;
+    }
+
+    .card .artist_name {
+        text-align: left;
+    }
+
+    .card .sales_text {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .card .sales_amount {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+@media (max-width:480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+    }
+
+    .card {
+        flex-direction: row;
+        padding: 0.75rem;
     }
 
     .card .top {
@@ -111,18 +161,24 @@
     .card .mobile {
         display: flex;
         flex-direction: column;
-        margin-left: 1rem;
+        margin-left: 0.2rem;
     }
 
     .card .artist_name {
         text-align: left;
     }
-}
 
-@media (min-width:480px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
+    .card .sales_text {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .card .sales_amount {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
     }
 }

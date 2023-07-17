@@ -5,25 +5,34 @@ import React, { useState, useEffect } from 'react'
 
 function TopCards() {
     const [numCreators, setNumCreators] = useState(12);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 480) {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+
+        const updateStateBasedOnScreenWidth = () => {
+            if (windowWidth < 480) {
                 setNumCreators(5);
-            } else if ((window.innerWidth <= 768) && (window.innerWidth > 480)) {
+            } else if (windowWidth >= 480 && windowWidth <= 768) {
                 setNumCreators(6);
             } else {
                 setNumCreators(12);
             }
         };
 
-        window.addEventListener('resize', handleResize);
-        handleResize();
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+        updateStateBasedOnScreenWidth();
+    }, [windowWidth]);
 
     return (
         <div className={css.grid}>
@@ -47,9 +56,9 @@ function TopCards() {
                     </div>
 
                 )
-            }).slice(0, 12)}
-        </div >
+            }).slice(0, numCreators)}
+        </div>
     );
 }
 
-export default TopCards;
+export default TopCards 
