@@ -8,7 +8,7 @@ export default function (props) {
         <div>
             <Navbar />
             <Account forWhat={props.forWhat} />
-            
+            <Footer />
         </div>
     )
 }

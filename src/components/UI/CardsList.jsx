@@ -33,7 +33,7 @@ function CardsList({Page}) {
       <div className={classes.marketFlex}>
         <div className={classes.gridCard}>
           {nftImagePaths.slice(0, numCards).map((path, index) => (
-            <Card key={index} cardName={'Leonardo'} artistName={'Leonardo'} cardImg={path} Page={Page}  />
+            <Card key={index} cardName={'Orbitian'} artistName={'Name Card'} cardImg={path} Page={Page}  />
           ))}
         
         </div>
