@@ -8,7 +8,6 @@ export default function () {
   return (
     <div>
       <Navbar />
-      <CardCateg />
       <BrowseCateg />
       <Footer />
     </div>

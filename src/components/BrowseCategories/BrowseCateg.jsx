@@ -23,9 +23,7 @@ function Browse() {
   return (
     <>
       <section className={classes.bcategContainer}>
-        <div className={classes.bcategTitle}>
-          <h3>Browse Categories</h3>
-        </div>
+        <h3>Browse Categories</h3>
         <div className={classes.bcategFlex}>
           <div className={classes.gridCard}>
             {renderDivs()}

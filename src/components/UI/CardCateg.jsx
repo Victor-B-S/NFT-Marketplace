@@ -10,7 +10,7 @@ function CardCateg(props) {
     const icons = [];
 
     iconPathsCategories.forEach((iconPathCategories, index) => {
-      const caminho = {backgroundImage: `url(${iconPathCategories})`}
+      const caminho = { backgroundImage: `url(${iconPathCategories})` }
       if (index === props.numero) {
         icons.push(<div className={classes.cardIcon} style={caminho} key={index}></div>);
       }
@@ -23,7 +23,9 @@ function CardCateg(props) {
       <div className={classes.cardCateg}>
         <div className={classes.cardImages}>
           <div style={imagem} className={classes.cardImage}>
-            {renderIcons()}
+            <div className={classes.cardBlur}>
+              {renderIcons()}
+            </div>
           </div>
         </div>
         <h5>{props.title}</h5>
