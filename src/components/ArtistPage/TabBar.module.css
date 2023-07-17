@@ -166,38 +166,24 @@
   font-weight: 400;
 }
 
-
-/* Phone */
+/* # Phone */
 @media (max-width:480px) {
 
   .tab_bar_center {
     width: 315px;
   }
 
-  .tab {
-    align-items: center;
-    background-color: transparent;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: var(--caption--label-text);
-    border-left-style: none;
-    border-right-style: none;
-    border-top-style: none;
-    display: flex;
-    flex: 1;
-    gap: 16px;
-    height: 60px;
-    justify-content: center;
-    padding: 0px 10px;
-    position: relative;
-  }
-
   .tab_text_active,
   .tab_text {
     line-height: 22.4px;
+    font-size: var(--font-size-m);
   }
 
   .tab {
+    padding: 0px 10px;
+  }
+  
+  .tab.active {
     padding: 0px 10px;
   }
 
@@ -205,12 +191,10 @@
   .tab_badge {
     display: none;
   }
-
 }
 
-/* Tablet */
-@media (max-width:768px) {
-
+/* # Tablet */
+@media (min-width:481px) and (max-width:768px) {
   .tab_bar_center {
     width: 680px;
   }
@@ -225,10 +209,9 @@
     line-height: 13.2px;
     font-size: var(--font-size-s);
   }
-
 }
 
-/* Desktop */
-@media (max-width: 1025px) {
+/* # Desktop */
+@media (min-width:769px) {
 
 }

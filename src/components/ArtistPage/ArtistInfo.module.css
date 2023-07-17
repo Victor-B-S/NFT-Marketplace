@@ -290,59 +290,17 @@
   font-weight: 600;
 }
 
-/* Phone */
+/* # Phone */
 @media (max-width:480px) {
-
-  .artist_info_section {
-    width: 315px;
-  }
-
-  .artist_name_button {
-    align-self: stretch;
-    background-color: transparent;
-    letter-spacing: 0.00px;
-    line-height: 39.2px;
-    margin-top: -1.00px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-  }
-
-  .artist_name {
-    align-self: stretch;
-    background-color: transparent;
-    letter-spacing: 0.00px;
-    line-height: 39.2px;
-    margin-top: -1.00px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--text);
-    font-family: var(--font-family-work_sans);
-    font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 600;
-  }
-
-  .ct_as {
-    align-self: stretch;
-    flex-direction: column;
-    height: auto;
-  }
-
-}
-
-/* Tablet */
-@media (max-width:768px) {
   
 }
 
-/* Desktop */
-@media (max-width: 1025px) {
+/* # Tablet */
+@media (min-width:481px) and (max-width:768px) {
+
+}
+
+/* # Desktop */
+@media (min-width:769px) {
 
 }

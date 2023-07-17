@@ -71,9 +71,8 @@
   width: 120px;
 }
 
-/* Phone */
+/* # Phone */
 @media (max-width:480px) {
-
   .image_place_holder {
     height: 250px;
     min-width: 375px;
@@ -94,12 +93,10 @@
     position: relative;
     width: 375px;
   }
-
 }
 
-/* Tablet */
-@media (max-width:768px) {
-
+/* # Tablet */
+@media (min-width:481px) and (max-width:768px) {
   .image_place_holder {
     height: 280px;
     min-width: 834px;
@@ -108,11 +105,9 @@
   .profile_image {
     width: 690px;
   }
-
-  
 }
 
-/* Desktop */
-@media (max-width: 1025px) {
+/* # Desktop */
+@media (min-width:769px) {
 
 }
