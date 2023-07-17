@@ -102,28 +102,30 @@
     line-height: 140%;
 }
 
-@media only screen and (min-width:801px) and (max-width:1280px) {
+@media only screen and (min-width:908px) and (max-width:1280px) {
+
+    .subscribeWidgetText {
+        display: flex;
+        flex-direction: column;
+    }
 
     .subscribeWidgetText > h3 {
         color: var(--white, #FFF);
-        /* H3 - Work Sans */
         font-family: Work Sans;
-        font-size: 38px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 600;
-        line-height: 120%; /* 45.6px */
+        line-height: 140%;
         align-self: stretch;
-        
     }
     
     .subscribeWidgetText > p {
         color: var(--white, #FFF);
-        /* Body Text- Work Sans */
         font-family: Work Sans;
-        font-size: 22px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 160%; /* 35.2px */
+        line-height: 140%;
     }
 
     .subscribeWidgetInputHolder {
@@ -132,19 +134,27 @@
         display: flex;
         gap: 16px;
         height: fit-content;
+        align-self: stretch;
+        padding-left: 0px;
     }
 
 
     .subscribeWidgetInput {
-        display: flex;
+        height: 46px;
+        padding: 15px 20px;
+        justify-content: center;
+        align-self: stretch;
+        border-radius: 20px;
     }
 
     .subscribeWidgetBtn {
-        height: 46px;
+        align-self: stretch;
+        justify-content: center;
+        height: 46px;    
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:800px) {
+@media only screen and (min-width:480px) and (max-width:908px) {
     .subscribeWidget {
         padding: 0px;
         align-items: center;
@@ -153,6 +163,35 @@
 
     .subscribeWidgetInputHolder {
         flex-direction: column;
+        padding-left: 0px;
+        background: none;
+        display: flex;
+        gap: 12px;
+        height: fit-content;
+    }
+
+    .subscribeWidgetInput {
+        height: 46px;
+        padding: 15px 20px;
+        justify-content: center;
+        align-self: stretch;
+        border-radius: 20px;
+        
+    }
+
+    .subscribeWidgetContent {
+        background: none;
+        flex-direction: column;
+        padding: 40px 20px;
+        align-items: center;     
+        justify-content: center;
+    }
+
+    
+    .subscribeWidgetBtn {
+        align-self: stretch;
+        justify-content: center;
+        height: 46px;    
     }
 
     .subscribeWidgetContent {
@@ -179,6 +218,20 @@
 
     .subscribeWidgetInputHolder {
         flex-direction: column;
+        padding-left: 0px;
+        background: none;
+        display: flex;
+        gap: 12px;
+        height: fit-content;
+    }
+
+    .subscribeWidgetInput {
+        height: 46px;
+        padding: 15px 20px;
+        justify-content: center;
+        align-self: stretch;
+        border-radius: 20px;
+        
     }
 
     .subscribeWidgetContent {
@@ -186,6 +239,14 @@
         flex-direction: column;
         padding: 40px 20px;
         align-items: center;     
+        justify-content: center;
+    }
+
+    
+    .subscribeWidgetBtn {
+        align-self: stretch;
+        justify-content: center;
+        height: 46px;    
     }
 
     .subscribeWidgetContentImg {
