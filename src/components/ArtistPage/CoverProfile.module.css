@@ -1,22 +1,4 @@
-.containerDesktop{
-  align-items: flex-start;
-  background-color: var(--background);
-  border: 1px none;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  left: 0px;
-  margin: 0px;
-  min-height: 2958px;
-  min-width: 1280px;
-  mix-blend-mode: normal;
-  overflow-x: hidden;
-  position: relative;
-  top: 0px;
-  width: 100%;
-}
-
-.containerCover{
+.cover_image {
   align-items: center;
   align-self: stretch;
   background-color: transparent;
@@ -26,23 +8,17 @@
   position: relative;
 }
 
-.imageCover{
+.image_place_holder {
   align-self: stretch;
   background-color: transparent;
   height: 320px;
-  /* min-width: 1280px; */
+  min-width: 1280px;
   mix-blend-mode: normal;
   object-fit: cover;
   position: relative;
-  background-image: url("../../images/ArtistPage/ArtistPage-image-placeholder-1.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-size: contain;
-  /* background-position-x: 96%; */
 }
 
-.imageProfile{
+.profile_image {
   align-items: flex-start;
   background-color: transparent;
   display: flex;
@@ -52,7 +28,7 @@
   width: 1050px;
 }
 
-.avatar{
+.avatar {
   align-items: flex-start;
   background-color: transparent;
   border: 2px solid;
@@ -62,9 +38,9 @@
   display: flex;
   gap: 10px;
   height: auto;
-  margin-bottom: -2px;
-  margin-left: -2px;
-  margin-top: -2px;
+  margin-bottom: -2.00px;
+  margin-left: -2.00px;
+  margin-top: -2.00px;
   mix-blend-mode: normal;
   pointer-events: auto;
   position: relative;
@@ -72,7 +48,11 @@
   width: fit-content;
 }
 
-.asset{
+.avatar:hover {
+  transform: scale(0.95); 
+}
+
+.asset {
   background-color: transparent;
   height: 120px;
   min-width: 120px;
@@ -80,7 +60,7 @@
   position: relative;
 }
 
-.avatarImage{
+.avatar_placeholder {
   background-color: transparent;
   height: 120px;
   left: 0px;
@@ -97,7 +77,13 @@
     /* min-height: 3152px; */
     min-width: 375px;
   }
-  .imageCover{
+
+  .image_place_holder {
+    height: 250px;
+    min-width: 375px;
+  }
+
+  .image_place_holder {
     align-self: stretch;
     background-color: transparent;
     height: 250px;
@@ -105,12 +91,14 @@
     mix-blend-mode: normal;
     object-fit: cover;
     position: relative;
-    background-image: url("../../images/ArtistPage/ArtistPage-image-placeholder-3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position-x: 96%; */
   }
+
+  .profile_image {
+    justify-content: center;
+    position: relative;
+    width: 375px;
+  }
+
 }
 
 /* Tablet */
@@ -119,23 +107,17 @@
     /* min-height: 3237px; */
     min-width: 834px;
   }
-  .containerTablet {
-    
-  }
-  .imageCover{
-    align-self: stretch;
-    background-color: transparent;
+
+  .image_place_holder {
     height: 280px;
     min-width: 834px;
-    mix-blend-mode: normal;
-    object-fit: cover;
-    position: relative;
-    background-image: url("../../images/ArtistPage/ArtistPage-image-placeholder-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position-x: 96%; */
   }
+
+  .profile_image {
+    width: 690px;
+  }
+
+  
 }
 
 /* Desktop */
