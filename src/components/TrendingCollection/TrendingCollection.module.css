@@ -1,0 +1,69 @@
+.trendingContainer {
+    background: var(--background, #2B2B2B);
+}
+
+.trendingTitle {
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 38px;
+    font-style: normal;
+    margin: 0;
+    padding-left: 90px;
+}
+
+.trendingDescription {
+    color: #FFFFFF;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: left; /* alinha o texto à esquerda */
+    padding: 30px; /* add espaçamento ao redor da descrição */
+    margin: 0;
+    padding-left: 90px;
+}
+
+.imagesIcon {
+    display: flex;
+    flex-direction: center;
+}
+  
+.gridCard3 {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 120px;
+    margin-top: 40px;
+}
+
+.threeSmallSquare {
+    display: flex;
+}
+
+.trendingLowFlex {
+    display: flex;
+    gap: 3px; /* espaço entre os cards */
+    max-width: 800px; /* largura máxima para o container flex */
+    margin: 0 auto; /* centraliza o container flex horizontalmente */
+    flex-direction: row;
+    align-items: flex-start; /* Alinha os elementos à esquerda */
+}
+
+@media (max-width: 768px) {
+    .gridCard3 {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+  
+@media (max-width: 480px) {
+    .trendingSearch h3 {
+      font-size: 1.75rem;
+      margin-top: 15%;
+    }
+    .trendingFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 0px 20px;
+    }
+}
