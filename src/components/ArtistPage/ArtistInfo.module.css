@@ -292,6 +292,19 @@
 
 /* # Phone */
 @media (max-width:480px) {
+  .artist_info {
+    padding: 30px 0px;
+  }
+
+  .artist_info_section {
+    width: 315px;
+  }
+
+  .artist_name {
+    align-self: stretch;
+    line-height: 39.2px;
+    font-size: var(--font-size-xxxl);
+  }
   
 }
 

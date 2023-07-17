@@ -1,6 +1,37 @@
 import classes from "./ArtistInfo.module.css";
+import { useEffect, useState } from "react";
 
 function ArtistInfo() {
+
+  const [size480, setSize480] = useState(false);
+  const [size768, setSize768] = useState(false);
+  const [size, setSize] = useState(true);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 480) {
+        setSize480(true);
+        setSize768(false);
+        setSize(false);
+      } else if ((window.innerWidth <= 768) && (window.innerWidth > 480)) {
+        setSize480(false);
+        setSize768(true);
+        setSize(false);
+      } else {
+        setSize480(false);
+        setSize768(false);
+        setSize(true);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); 
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className={classes.container}>
