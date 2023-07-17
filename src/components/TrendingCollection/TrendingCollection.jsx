@@ -6,6 +6,7 @@ import imageBeKind2Robots from "../../images/Icons/kind-robots.svg"
 import bearImage from "../../images/bear.png"
 import catImage from "../../images/cat.png"
 import numberImage from "../../images/number.png"
+import dogImage from "../../images/dog.png"
 
 function TrendingCollection() {
     return (
@@ -18,6 +19,7 @@ function TrendingCollection() {
         <div className={classes.imagesIcon}>
             <div className={classes.trendingLowFlex}>
                 <CardTrendingCollection 
+                  dogImage={dogImage} 
                   additionalImage={bearImage}
                   additionalImage2={catImage}
                   additionalImage3={numberImage}

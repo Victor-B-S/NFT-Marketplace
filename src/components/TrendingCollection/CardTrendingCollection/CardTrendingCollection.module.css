@@ -19,7 +19,7 @@
 .additionalImagesContainer {
     /* Estilos para o contêiner das imagens adicionais */
     display: flex;
-    gap: 5px;
+    gap: 13px;
 }
 
 .cardTrendingTitle {

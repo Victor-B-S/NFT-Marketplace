@@ -12,9 +12,9 @@ function App() {
       {/*<CardCateg /> */}
       {/* <BrowseCateg /> */}
       {/* <CardHiw /> */}
-      {/* <HowItWorks />*/}
-      <CardTrendingCollection />
-       <TrendingCollection />
+      {/* <HowItWorks /> */}
+      {/* <CardTrendingCollection /> */}
+      <TrendingCollection />
     </div>
   )
 }
