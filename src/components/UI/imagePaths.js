@@ -31,3 +31,9 @@ export const iconPathsCategories = [
     "./src/images/icons/Basketball.svg",
     "./src/images/icons/Planet.svg",
 ];
+
+export const iconPaths = [
+    "./src/images/icons/create.svg",
+    "./src/images/icons/setup.svg",
+    "./src/images/icons/start.svg",
+];
