@@ -73,10 +73,6 @@
 
 /* Phone */
 @media (max-width:480px) {
-  .container {
-    /* min-height: 3152px; */
-    min-width: 375px;
-  }
 
   .image_place_holder {
     height: 250px;
@@ -103,10 +99,6 @@
 
 /* Tablet */
 @media (max-width:768px) {
-  .container {
-    /* min-height: 3237px; */
-    min-width: 834px;
-  }
 
   .image_place_holder {
     height: 280px;
