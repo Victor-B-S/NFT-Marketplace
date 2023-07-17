@@ -2,6 +2,7 @@ import Card from "../UI/Card";
 import classes from "./Cards.module.css";
 import { nftImagePaths } from "../UI/imagePaths";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
 function Cards() {
   
@@ -29,12 +30,12 @@ function Cards() {
   return (
     <>
       <div className={classes.marketContainer}>
-        <div className={classes.marketFlex}>
+        <div className={classes.marketFlex}> 
           <div className={classes.gridCard}>
             {nftImagePaths
               .slice(0, numCards)
               .map((path, index) => (
-                  <Card key={index} cardImg={path} />
+                  <Link to='/nft-page'><Card key={index} cardImg={path} /></Link>
             ))}
           </div>
         </div>
