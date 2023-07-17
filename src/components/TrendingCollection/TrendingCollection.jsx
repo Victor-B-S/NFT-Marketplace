@@ -42,6 +42,7 @@ function TrendingCollection() {
                   title={"Magic Mushrooms"} 
                   image={imageShraamie}  
                   description={"Shroomie"} 
+                  className="mushroom-card"
                 />
                 <CardTrendingCollection 
                   machineImage={machineImage} 

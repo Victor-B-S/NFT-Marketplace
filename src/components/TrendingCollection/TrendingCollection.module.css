@@ -49,26 +49,33 @@
     max-width: 800px;
     margin-left: 82px;
 }
-
-@media (max-width: 768px) {
-    .gridCard3 {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-}
   
 @media (max-width: 480px) {
     .trendingLowFlex {
         flex-wrap: wrap; /* quebrar em várias linhas */
         justify-content: center; 
     }
-
     /* esconde todos os cards, exceto o com a imagem do cachorro */
     .trendingLowFlex .cardTrending {
         display: none;
     }
-
     .trendingLowFlex .cardTrending.dog-card {
         display: block;
         flex-basis: 100%; /* toda a largura disponível */
+    }
+}
+
+@media (max-width: 768px) {
+    .trendingLowFlex {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    .trendingLowFlex .cardTrending {
+        display: none;
+    }
+    .trendingLowFlex .cardTrending.dog-card,
+    .trendingLowFlex .cardTrending.mushroom-card {
+        display: block;
+        flex-basis: 100%; 
     }
 }
