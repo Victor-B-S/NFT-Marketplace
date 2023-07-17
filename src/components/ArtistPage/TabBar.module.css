@@ -132,7 +132,6 @@
   width: fit-content;
 }
 
-
 .tab_badge_value_active {
   background-color: transparent;
   letter-spacing: 0.00px;
@@ -174,6 +173,43 @@
     /* min-height: 3152px; */
     min-width: 375px;
   }
+
+  .tab_bar_center {
+    width: 315px;
+  }
+
+  .tab {
+    align-items: center;
+    background-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: var(--caption--label-text);
+    border-left-style: none;
+    border-right-style: none;
+    border-top-style: none;
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    height: 60px;
+    justify-content: center;
+    padding: 0px 10px;
+    position: relative;
+  }
+
+  .tab_text_active,
+  .tab_text {
+    line-height: 22.4px;
+  }
+
+  .tab {
+    padding: 0px 10px;
+  }
+
+  .tab_badge_active,
+  .tab_badge {
+    display: none;
+  }
+
 }
 
 /* Tablet */
@@ -182,6 +218,22 @@
     /* min-height: 3237px; */
     min-width: 834px;
   }
+
+  .tab_bar_center {
+    width: 680px;
+  }
+
+  .tab_text_active,
+  .tab_text {
+    line-height: 22.4px;
+  }
+
+  .tab_badge_value_active,
+  .tab_badge_value {
+    line-height: 13.2px;
+    font-size: var(--font-size-s);
+  }
+
 }
 
 /* Desktop */

@@ -1,6 +1,6 @@
 .marketContainer {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
+  grid-template-columns: auto;
   position: relative;
   background: var(--background-secondary, #3b3b3b);
 }
