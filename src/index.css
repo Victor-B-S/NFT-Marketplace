@@ -146,6 +146,10 @@ p {
     border: 2px solid var(--call-to-action);
 }
 
+.btn a {
+    text-decoration: none;
+}
+
 .btn:hover {
     scale: 0.95;
 }

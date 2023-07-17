@@ -172,7 +172,7 @@ footer .footer_input_header {
     margin: 1.56rem 0 1.25rem 0;
 }
 
-/* Tablet */
+/* Tablet */ 
 @media (min-width:481px) and (max-width:768px) {
     footer {
         padding: 2.5rem 5.5rem;

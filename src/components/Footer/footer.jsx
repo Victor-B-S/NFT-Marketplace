@@ -26,7 +26,7 @@ function Footer() {
                     <h5>Explore</h5>
                     <div className={footer.footer_explorep}>
                         <Link to="/marketplace">Marketplace</Link>
-                        <Link to="/rankings">Rankings</Link>
+                        <Link to="/ranking">Rankings</Link>
                         <Link to ="/connect-wallet">Connect a wallet</Link>
                     </div>
                 </div>
