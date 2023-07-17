@@ -11,10 +11,14 @@ export default function NftHighlight() {
     <div className={classes.container}>
       <div className={classes.gradient}>
         <div className={classes.content}>
-          <div className={classes.artistCard}><img src="../src/images/Avatar-7.png" />Shroomie</div>
-          <h2>Magic Mushrooms</h2>
-          <CountdownTimer targetDate={targetDate} />
-          <button>See NFT</button>
+          <div className={classes.left}>
+            <div className={classes.artistCard}><img src="../src/images/Avatar-7.png" />Shroomie</div>
+            <h2 className={classes.nftTitle}>Magic Mushrooms</h2>
+            <button className={classes.seeNFT}><img src="../src/images/Eye.svg" /><span>See NFT</span></button>
+          </div>
+          <div className={classes.right}>
+            <CountdownTimer targetDate={targetDate} />
+          </div>
         </div>
       </div>
     </div>
