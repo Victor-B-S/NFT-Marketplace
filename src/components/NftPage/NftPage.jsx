@@ -5,6 +5,7 @@ import CardsList from "../UI/CardsList";
 
 function NftPage() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const targetDate = "2023-07-17T23:59:59";
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,7 +30,7 @@ function NftPage() {
 
           {windowWidth <= 480 ? (
             <>
-              <CountdownTimer className={classes} />
+              <CountdownTimer targetDate={targetDate} />
             </>
           ) : (
             <></>
@@ -42,7 +43,7 @@ function NftPage() {
             </div>
           </div>
 
-          <span >Description</span>
+          <span>Description</span>
           <p>
             The Orbitians <br />
             is a collection of 10,000 unique NFTs on the Ethereum blockchain,
@@ -86,24 +87,37 @@ function NftPage() {
           </div>
         </div>
         <div>
-        {windowWidth > 480 ? (
+          {windowWidth > 480 ? (
             <>
-              <CountdownTimer className={classes} />
+              <CountdownTimer targetDate={targetDate} />
             </>
           ) : (
             <></>
           )}
-         
         </div>
-       
       </div>
-      <div>
-        <div className={classes.moreArtisitNftPage}>
-            <h4>More from this artist</h4>
-            <button type="button">Go to Artist Page</button>
-        </div>
-      <CardsList Page={'NftPage'}/>
-      </div>
+
+      {windowWidth <= 480 ? (
+        <>
+          <div>
+            <div className={classes.moreArtisitNftPage}>
+              <h4>More from this artist</h4>
+              <CardsList Page={"NftPage"} />
+              <button type="button">Go to Artist Page</button>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div>
+            <div className={classes.moreArtisitNftPage}>
+              <h4>More from this artist</h4>
+              <button type="button">Go to Artist Page</button>
+            </div>
+            <CardsList Page={"NftPage"} />
+          </div>
+        </>
+      )}
     </>
   );
 }

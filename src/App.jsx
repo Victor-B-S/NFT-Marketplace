@@ -15,7 +15,7 @@ export default function App() {
     <>
     <Navbar />
     <NftPage />
-    <Footer />
+   
     </>
   )
 }

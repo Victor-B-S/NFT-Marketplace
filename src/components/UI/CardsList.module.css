@@ -44,4 +44,8 @@
     .gridCard {
       grid-template-columns: 1fr;
     }
+    .marketContainer {
+        width: 100%;
+        
+      }
   }

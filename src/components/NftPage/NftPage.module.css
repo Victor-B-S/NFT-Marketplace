@@ -102,7 +102,6 @@
 
 .moreArtisitNftPage button {
   font-size: 1rem;
- 
   font-family: var(--font-family-work_sans);
   height: 3.75rem;
   padding: 0rem 3.125rem;
@@ -128,6 +127,10 @@
   .tagsOptionsNftPage p {
     padding: 10px 20px;
   }
+  .moreArtisitNftPage h4 {
+    font-size: 1.75rem;
+   
+  }
 }
 
 @media (max-width: 480px) {
@@ -141,5 +144,18 @@
 
   .createdNftPage {
     margin-top: 20px;
+  }
+  .moreArtisitNftPage {
+    flex-direction: column;
+  }
+
+  .moreArtisitNftPage h4 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .moreArtisitNftPage button {
+    width: 90%;
+    margin: 0 auto;
   }
 }
