@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
 import Card from "./Card";
 import classes from "./CardsList.module.css";
 import { nftImagePaths } from "./imagePaths";
@@ -30,14 +31,16 @@ function CardsList({Page}) {
 
   return (
     <div className={classes.marketContainer}>
-      <div className={classes.marketFlex}>
-        <div className={classes.gridCard}>
-          {nftImagePaths.slice(0, numCards).map((path, index) => (
-            <Card key={index} cardName={'Orbitian'} artistName={'Name Card'} cardImg={path} Page={Page}  />
-          ))}
-        
+      <Link to="/nft-page">
+        <div className={classes.marketFlex}>
+          <div className={classes.gridCard}>
+            {nftImagePaths.slice(0, numCards).map((path, index) => (
+              <Card key={index} cardName={'Orbitian'} artistName={'Name Card'} cardImg={path} Page={Page}  />
+            ))}
+          
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

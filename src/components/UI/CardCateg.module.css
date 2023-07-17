@@ -15,6 +15,10 @@
     scale: 0.95;
 }
 
+a {
+    text-decoration: none;
+}
+
 .cardImage {
     width: 15rem;
     height: 15rem;

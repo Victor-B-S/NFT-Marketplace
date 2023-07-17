@@ -1,5 +1,6 @@
 import classes from "./CardCateg.module.css";
 import { iconPathsCategories } from "../UI/imagePaths";
+import { Link } from "react-router-dom";
 
 function CardCateg(props) {
   const imagem = {
@@ -21,14 +22,16 @@ function CardCateg(props) {
   return (
     <>
       <div className={classes.cardCateg}>
-        <div className={classes.cardImages}>
-          <div style={imagem} className={classes.cardImage}>
-            <div className={classes.cardBlur}>
-              {renderIcons()}
+        <Link to="/marketplace">
+          <div className={classes.cardImages}>
+            <div style={imagem} className={classes.cardImage}>
+              <div className={classes.cardBlur}>
+                {renderIcons()}
+              </div>
             </div>
           </div>
-        </div>
-        <h5>{props.title}</h5>
+          <h5>{props.title}</h5>
+        </Link>
       </div>
     </>
   );

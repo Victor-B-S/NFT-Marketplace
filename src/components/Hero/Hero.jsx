@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import css from './Hero.module.css'
 
 function Hero() {
@@ -10,7 +11,7 @@ function Hero() {
                     <img className={css.mobile} src='../src/images/heroanimation.gif' />
                     <button class='btn secondary filled btn_mobile'>
                         <img src='../src/images/Icons/RocketLaunch.svg' />
-                        Get Started!
+                        <Link to="/create-account">Get Started!</Link>
                     </button>
                     <div className={css.data}>
                         <div className={css.data_inside}>

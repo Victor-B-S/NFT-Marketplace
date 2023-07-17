@@ -60,6 +60,10 @@
     text-transform: capitalize;
 }
 
+.hero a {
+    text-decoration: none;
+}
+
 .hero .info .data_text {
     font-family: var(--font-family-work_sans);
     color: var(--white);
