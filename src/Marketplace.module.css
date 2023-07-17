@@ -4,8 +4,8 @@
 
 
 .marketSearch {
-  margin: 10% 0;
-  grid-column: 2;
+  margin: 10% auto;
+  width: 90%;
   font-family: var(--font-family-work_sans);
   font-weight: 400;
   color: var(--white);
@@ -27,8 +27,8 @@
 
 .marketSearch input {
   font-size: 1.2rem;
-  width: 95%;
-  padding: 20px;
+  width: 90%;
+  padding: 15px;
   border-radius: 20px;
   background-color: transparent;
   outline: none;
@@ -101,6 +101,20 @@
   
     padding: 3px 10px;
   }
+
+  .marketSearch h3 {
+    font-size: 2.375rem;
+   
+  }
+  
+  .marketSearch p {
+    
+    font-size: 1rem;
+   
+  }
+  .marketSearch input {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -112,7 +126,6 @@
   .marketSearch p {
     font-family: var(--font-family-work_sans);
     font-size: 1rem;
-    margin: 4% 0 10% 0;
     line-height: 140%;
   }
 
@@ -129,8 +142,6 @@
     display: none;
   }
 
-  .marketSearch input {
-    font-size: 1rem;
-  }
+ 
   
 }
