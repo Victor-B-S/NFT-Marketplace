@@ -4,11 +4,12 @@ import Homepage from './pages/homepage';
 import ArtistPageLink from './pages/artistpage';
 import MarketplaceLink from './pages/marketplace';
 import Account from './pages/connect';
+import Subscribe from './components/Subscribe';
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
+      <Route path="/" element={<Subscribe />} />
       <Route path='/artist-page' element={<ArtistPageLink />}/>
       <Route path='/marketplace' element={<MarketplaceLink />}/>
       <Route path='/create-account' element={<Account forWhat='Create'/>}/>

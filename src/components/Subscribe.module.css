@@ -1,0 +1,22 @@
+.subscribeWidgetContent {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    align-self: stretch;
+    padding: 60px;
+}
+
+.subscribeWidgetContentImg {
+    height: 310px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: url(../images/Astronaut.png), lightgray 50% / cover no-repeat;
+}
+
+.subscribeWidgetForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+}
