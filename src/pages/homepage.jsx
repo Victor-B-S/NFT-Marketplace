@@ -8,6 +8,7 @@ import NFTHighlight from '../components/NftHighlight/NftHighlight'
 import Hero from '../components/Hero/Hero'
 import Subscribe from '../components/Subscribe'
 import Tops from '../components/TopCreators/Top'
+import Discover from '../components/Discover/Discover'
 
 export default function () {
   return (
@@ -16,6 +17,7 @@ export default function () {
       <Hero />
       <Tops />
       <BrowseCateg />
+      <Discover />
       <NFTHighlight />
       <HowWorks />
       <Subscribe />

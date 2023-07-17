@@ -44,7 +44,6 @@ function Marketplace() {
         </div>
       </div>
       <div className={classes.marketLine}></div>
-      
       <div className={classes.marketContainer}>
         <div className={classes.marketFlex}>
           <div className={classes.marketFilter}>
@@ -60,11 +59,8 @@ function Marketplace() {
         </div>
       </div>
       <div className={classes.marketCards}>
-        <CardsList Page={"MarketPlace"} />
-          
+        <CardsList Page={"MarketPlace"} /> 
       </div>
-      
-         
     </>
   );
 }
