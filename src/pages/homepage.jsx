@@ -15,7 +15,7 @@ export default function () {
       <BrowseCateg />
       <NFTHighlight />
       <HowWorks />
-      <Footer />
+      
     </div>
   )
 }

@@ -1,0 +1,51 @@
+.marketContainer {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+
+
+  .marketContainer:nth-child(3) {
+    background: var(--background-secondary, #3b3b3b);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .marketFlex {
+    margin-bottom: 10%;
+  }
+  
+  .marketFlex:nth-child(3) {
+    display: grid;
+  }
+  
+  
+  .gridCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    grid-auto-flow: row;
+    padding: 5% 0;
+    justify-items: center;
+    margin: 0 20px 0 20px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .gridCard {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .gridCard {
+      grid-template-columns: 1fr;
+    }
+    .marketContainer {
+        width: 100%;
+        
+      }
+  }

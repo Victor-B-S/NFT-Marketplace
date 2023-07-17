@@ -8,7 +8,7 @@ export default function ArtistPageLink() {
     <>
         <Navbar />
         <ArtistPage />
-        <Footer />
+       
     </>
   )
 }

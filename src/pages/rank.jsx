@@ -7,7 +7,7 @@ export default function Rank() {
     <>
         <Navbar />
         <Ranking />
-        <Footer />
+     
     </>
   )
 }
