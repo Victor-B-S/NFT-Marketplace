@@ -1,6 +1,6 @@
 import Card from "../UI/Card";
 import classes from "./Cards.module.css";
-import { imagePaths } from "../UI/imagePaths";
+import { nftImagePaths } from "../UI/imagePaths";
 import { useEffect, useState } from "react";
 
 function Cards() {
@@ -31,7 +31,7 @@ function Cards() {
       <div className={classes.marketContainer}>
         <div className={classes.marketFlex}>
           <div className={classes.gridCard}>
-            {imagePaths
+            {nftImagePaths
               .slice(0, numCards)
               .map((path, index) => (
                   <Card key={index} cardImg={path} />
