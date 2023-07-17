@@ -1,0 +1,19 @@
+.app {
+    background: var(--background);   
+}
+
+.cardCateg {
+    background: #3B3B3B;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.cardCateg:hover {
+    scale: 0.95;
+}
+
+.cardCateg h5 {
+    color: var(--white);
+    padding-left: 10%; 
+}

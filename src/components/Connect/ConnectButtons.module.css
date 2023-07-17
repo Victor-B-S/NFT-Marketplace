@@ -1,0 +1,97 @@
+.flexButtons {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.flexButtons span {
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-secondary, #3b3b3b);
+}
+
+.flexButtons p{
+  padding: 0;
+  margin: 0;
+  text-align: initial;
+}
+
+
+.flexButtons .button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  border-radius: 20px;
+  justify-content: flex-start;
+  background: var(--background-secondary, #3b3b3b);
+  border: 1px solid var(--call-to-action, #a259ff);
+  cursor: pointer;
+}
+
+.flexButtons .button:hover {
+  transform: scale(0.95);
+}
+.flexButtons p {
+  background: var(--background-secondary, #3b3b3b);
+  color: var(--white, #ffffff);
+  font-family: var(--font-family-work_sans);
+  font-size: var(--font-size-l);
+  font-weight: 600;
+}
+
+.flexButtons .metamask {
+  background-image: url("../src/images/Connect/Metamask.png");
+}
+
+.flexButtons .wallet {
+  background-image: url("../src/images/Connect/WalletConnect.png");
+}
+
+.flexButtons .coinbase {
+  background-image: url("../src/images/Connect/Coinbase.png");
+}
+
+@media (max-width: 768px) {
+ 
+  .flexButtons span {
+    background-size: 32px 32px;
+    background-position: center;
+    margin: 0;
+  }
+
+  .flexButtons .button {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+  
+  .flexButtons p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flexButtons {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .flexButtons span {
+    margin: 0;
+  }
+
+  .flexButtons .button {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+
+  .flexButtons p {
+    font-size: 20px;
+  }
+  
+}
+
+

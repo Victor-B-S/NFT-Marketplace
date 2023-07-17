@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -7,15 +8,8 @@
     transition: 0.3s;
 }
 
-body {
-    background-color: var(--background);
-}
-
 :root {
-    --call-to-action: #A259FF;
-    --background: #2B2B2B;
-    --background-secondary: #3B3B3B;
-    --caption-and-label: #858584;
+    --background: #2b2b2b;
     --background---secondary: #3b3b3b;
     --black: #000000;
     --call-to-action: #a259ff;
@@ -32,8 +26,12 @@ body {
     --font-size-xxl: 38px;
     --font-size-xxxl: 51px;
     --font-size-xxxxl: 67px;
-    --font-family-space_mono: "Space Mono";
-    --font-family-work_sans: "Work Sans";
+    --font-family-space_mono: "Space Mono", Helvetica;
+    --font-family-work_sans: "Work Sans", Helvetica;
+}
+
+body {
+    background-color: var(--background);
 }
 
 h1 {
@@ -116,4 +114,50 @@ p {
     background-image: url(../src/images/storefront.svg);
     width: 2rem;
     height: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 0rem 3.125rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    border-radius: 1.25rem;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: var(--font-family-work_sans);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: white;
+}
+
+.filled {
+    height: 4.5rem;
+    border-radius: 1.25rem;
+    background: var(--call-to-action);
+    border: none;
+}
+
+.outlined {
+    background: transparent;
+    border: 2px solid var(--call-to-action);
+}
+
+.btn:hover {
+    scale: 0.95;
+}
+
+.primary {
+    height: 4.5rem;
+}
+
+.secondary {
+    height: 3.75rem;
+}
+
+.tertiary {
+    height: 2.875rem;
 }
