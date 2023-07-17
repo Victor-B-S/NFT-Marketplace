@@ -12,11 +12,14 @@ import Navbar from './components/Navbar/navbar';
 
 export default function App() {
   return (
-    <>
-    <Navbar />
-    <NftPage />
-   
-    </>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path='/artist-page' element={<ArtistPageLink />}/>
+      <Route path='/marketplace' element={<MarketplaceLink />}/>
+      <Route path='/create-account' element={<Account forWhat='Create'/>}/>
+      <Route path='/connect-wallet' element={<Account forWhat='Connect'/>}/>
+      <Route path='/ranking' element={<Ranking/>}/>
+    </Routes>
   )
 }
 /* <Routes>

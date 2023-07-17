@@ -5,7 +5,7 @@
   }
   
 
-  
+
   .marketContainer:nth-child(3) {
     background: var(--background-secondary, #3b3b3b);
     display: flex;
@@ -27,9 +27,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     grid-auto-flow: row;
-    margin-top: 10%;
+    padding: 5% 0;
     justify-items: center;
-    margin: 10% 20px 0 20px;
+    margin: 0 20px 0 20px;
   }
   
   

@@ -2,6 +2,7 @@ import Card from "./components/UI/Card";
 import classes from "./Marketplace.module.css";
 import { imagePaths } from "./components/UI/imagePaths";
 import { useEffect, useState } from "react";
+import CardsList from "./components/UI/CardsList";
 
 
 function Marketplace() {
@@ -42,32 +43,28 @@ function Marketplace() {
           </div>
         </div>
       </div>
-
+      <div className={classes.marketLine}></div>
+      
       <div className={classes.marketContainer}>
         <div className={classes.marketFlex}>
           <div className={classes.marketFilter}>
-            <div className={classes.marketFilterNfts}>
+            <div className={`${classes.marketFilter} ${classes.marketFilterActive}`}>
               <span>NFTs</span>
               <span>302</span>
             </div>
-            <div className={classes.marketFilterCollections}>
+            <div className={classes.marketFilter}>
               <span>Collections</span>
               <span>67</span>
             </div>
           </div>
         </div>
       </div>
-      <div className={classes.marketContainer}>
-        <div className={classes.marketFlex}>
-          <div className={classes.gridCard}>
-            {imagePaths
-              .slice(0, numCards)
-              .map((path, index) => (
-                <Card key={index} cardImg={path} />
-              ))}
-          </div>
-        </div>
+      <div className={classes.marketCards}>
+        <CardsList Page={"MarketPlace"} />
+          
       </div>
+      
+         
     </>
   );
 }
