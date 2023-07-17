@@ -243,16 +243,11 @@
   width: fit-content;
 }
 
-.icon_copy {
+.icon_copy, 
+.icon_plus {
   background-color: transparent;
   height: 20px;
   margin-left: -29.50px;
-  min-width: 20px;
-  position: relative;
-}
-.icon_copy {
-  background-color: transparent;
-  height: 20px;
   min-width: 20px;
   position: relative;
 }
@@ -303,7 +298,70 @@
   .artist_name {
     align-self: stretch;
     line-height: 39.2px;
-    font-size: var(--font-size-xxxl);
+    font-size: var(--font-size-xl);
+  }
+
+  .ct_as {
+    align-self: stretch;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .btn_copy, 
+  .btn_plus {
+    align-self: stretch;
+    width: auto;
+  }
+
+  .icon_copy, 
+  .icon_plus {
+    background-color: transparent;
+    height: 20px;
+    min-width: 20px;
+    position: relative;
+  }
+
+  .stats {
+    align-self: stretch;
+    width: 50%;
+  }
+
+  .x240k, .x100k {
+    line-height: 35.2px;
+    font-size: var(--font-size-l);
+  }
+
+  .total_sale2, .auctions2, .artists2, .the_internets {
+    line-height: 22.4px;
+    font-size: var(--font-size-m);
+  }
+
+  .bio2 {
+    line-height: 22.4px;
+    font-size: var(--font-size-m);
+    font-weight: 400;
+  }
+
+  .links {
+    background-color: transparent;
+    letter-spacing: 0.00px;
+    line-height: 22.4px;
+    margin-top: -1.00px;
+    mix-blend-mode: normal;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+    width: fit-content;
+    color: var(--caption--label-text);
+    font-family: var(--font-family-space_mono);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .icon_social_media {
+    height: 24px;
+    min-width: 24px;
   }
   
 }
