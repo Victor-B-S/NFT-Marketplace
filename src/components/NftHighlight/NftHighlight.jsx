@@ -16,7 +16,7 @@ export default function NftHighlight() {
             <h2 className={classes.nftTitle}>Magic Mushrooms</h2>
             <button className={classes.seeNFT}><img src="../src/images/Eye.svg" /><span>See NFT</span></button>
           </div>
-          <div className={classes.right}>
+          <div className={classes.right + " " + classes.backgroundEffect}>
             <CountdownTimer targetDate={targetDate} />
           </div>
         </div>

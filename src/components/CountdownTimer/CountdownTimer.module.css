@@ -15,10 +15,6 @@
     height: auto;
 }
 
-.backgroundEffects {
-    backdrop-filter: blur(10px) brightness(100%);
-}
-
 .timer{
     display: flex;
     flex-direction: row;

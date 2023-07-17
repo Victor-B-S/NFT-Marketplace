@@ -11,10 +11,6 @@ function App() {
     <div className="app">
       <Navbar />
       <NftHighlight />
-      <Browse />
-      <CardCateg />
-      <BrowseCateg />
-      <Footer />
     </div>
   )
 }
