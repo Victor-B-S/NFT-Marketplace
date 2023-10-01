@@ -14,15 +14,15 @@ form span {
 }
 
 form .username {
-    background-image: url("../src/images/Register/User.svg");
+    background-image: url("/src/images/Register/User.svg");
 }
 
 form .email {
-    background-image: url("../src/images/Register/EnvelopeSimple.svg");
+    background-image: url("/src/images/Register/EnvelopeSimple.svg");
 }
 
 form .password {
-    background-image: url("../src/images/Register/LockKey.svg");
+    background-image: url("/src/images/Register/LockKey.svg");
 }
 
 .input_container {

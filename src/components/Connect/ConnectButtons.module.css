@@ -46,15 +46,15 @@
 }
 
 .flexButtons .metamask {
-  background-image: url("../src/images/Connect/Metamask.png");
+  background-image: url("/src/images/Connect/Metamask.png");
 }
 
 .flexButtons .wallet {
-  background-image: url("../src/images/Connect/WalletConnect.png");
+  background-image: url("/src/images/Connect/WalletConnect.png");
 }
 
 .flexButtons .coinbase {
-  background-image: url("../src/images/Connect/Coinbase.png");
+  background-image: url("/src/images/Connect/Coinbase.png");
 }
 
 @media (max-width: 768px) {

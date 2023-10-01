@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import classes from "./NftHighlight.module.css"
 
 export default function NftHighlight() {
-
-  const targetDate = '2023-07-21T23:59:59';
+  
+  const oneAndAHalfHour = 90 * 60 * 1000
+  const targetDate = new Date();
+  targetDate.setTime(targetDate.getTime() + oneAndAHalfHour)
 
   return (
     <section className={classes.container}>

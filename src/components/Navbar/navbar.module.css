@@ -19,7 +19,7 @@ nav .logo_container {
 
 nav .logo_font {
     color: #FFF;
-    font-family: Space Mono;
+    font-family: var(--font-family-space_mono);
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 140%;
@@ -49,7 +49,7 @@ nav .menu_item:hover {
 nav .menu_item a {
     color: #FFF;
     text-align: center;
-    font-family: Work Sans;
+    font-family: var(--font-family-work_sans);
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -74,7 +74,7 @@ nav .burguer {
 
     nav .logo_font {
         color: #FFF;
-        font-family: Space Mono;
+        font-family: var(--font-family-space_mono);
         font-size: 1.022rem;
         font-weight: 600;
         line-height: 140%;
@@ -86,7 +86,7 @@ nav .burguer {
 
     nav .burguer {
         display: block;
-        background-image: url(../src/images/nav_burguer.png);
+        background-image: url("/src/images/nav_burguer.png");
         width: 1.5rem;
         height: 1.5rem;
         cursor: pointer;
@@ -106,7 +106,7 @@ nav .burguer {
 
     nav .logo_font {
         color: #FFF;
-        font-family: Space Mono;
+        font-family: var(--font-family-space_mono);
         font-size: 1.022rem;
         font-weight: 600;
         line-height: 140%;
@@ -118,7 +118,7 @@ nav .burguer {
 
     nav .burguer {
         display: block;
-        background-image: url(../src/images/nav_burguer.png);
+        background-image: url("/src/images/nav_burguer.png");
         width: 1.5rem;
         height: 1.5rem;
     }

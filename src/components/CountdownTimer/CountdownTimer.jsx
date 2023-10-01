@@ -27,6 +27,10 @@ const CountdownTimer = ({ targetDate }) => {
   });
 
   const formatTime = (time) => {
+    if (!time) {
+      return "00";
+    }
+
     return String(time).padStart(2, '0');
   };
 
